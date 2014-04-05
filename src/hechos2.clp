@@ -1,3 +1,4 @@
+(deffacts campeones "Campeones de fact-list"
   (campeon
     (nombre "Aatrox")
     (primario "Fighter")
@@ -1886,3 +1887,4 @@
   	(ba "Fizz" "Diana" "Katarina" "LeBlanc" "Akali" "Talon" "Kassadin" "Ahri" "Syndra" "Ahri")
   	(gw "Yasuo" "Jinx" "Vayne" "Caitlyn" "Ashe" "Corki" "Varus" "Draven" "Amumu" "Miss Fortune")
   )
+)
