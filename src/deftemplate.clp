@@ -1,7 +1,7 @@
 (deftemplate campeon
-	(slot nombre (type SYMBOL))
-	(slot primario (type SYMBOL))
-	(slot secundario (type SYMBOL))
+	(slot nombre (type STRING))
+	(slot primario (type STRING))
+	(slot secundario (type STRING))
 	(slot salud (type INTEGER))
 	(slot ataque (type INTEGER))
 	(slot hechizo (type INTEGER))

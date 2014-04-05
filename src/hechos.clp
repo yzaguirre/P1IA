@@ -28,7 +28,7 @@
   (campeon
   	(nombre "Akali")
   	(primario "Assassin")
-  	(secundario nil)
+  	(secundario "N/A")
   	(salud 3)
   	(ataque 5)
   	(hechizo 8)
@@ -41,7 +41,7 @@
   (campeon
   	(nombre "Alistar")
   	(primario "Tank")
-  	(secundario nil)
+  	(secundario "N/A")
   	(salud 9)
   	(ataque 6)
   	(hechizo 5)
@@ -80,7 +80,7 @@
   (campeon
   	(nombre "Annie")
   	(primario "Mage")
-  	(secundario nil)
+  	(secundario "N/A")
   	(salud 3)
   	(ataque 2)
   	(hechizo 10)
@@ -119,7 +119,7 @@
   (campeon
   	(nombre "Brand")
   	(primario "Mage")
-  	(secundario nil)
+  	(secundario "N/A")
   	(salud 2)
   	(ataque 2)
   	(hechizo 9)
@@ -132,7 +132,7 @@
   (campeon
   	(nombre "Caitlyn")
   	(primario "Marksman")
-  	(secundario nil)
+  	(secundario "N/A")
   	(salud 2)
   	(ataque 8)
   	(hechizo 2)
@@ -145,7 +145,7 @@
   (campeon
   	(nombre "Cassiopeia")
   	(primario "Mage")
-  	(secundario nil)
+  	(secundario "N/A")
   	(salud 3)
   	(ataque 2)
   	(hechizo 9)
@@ -171,7 +171,7 @@
   (campeon
   	(nombre "Corki")
   	(primario "Marksman")
-  	(secundario nil)
+  	(secundario "N/A")
   	(salud 3)
   	(ataque 8)
   	(hechizo 6)
@@ -223,7 +223,7 @@
   (campeon
   	(nombre "Draven")
   	(primario "Marksman")
-  	(secundario nil)
+  	(secundario "N/A")
   	(salud 3)
   	(ataque 9)
   	(hechizo 1)
@@ -366,7 +366,7 @@
   (campeon
   	(nombre "Graves")
   	(primario "Marksman")
-  	(secundario nil)
+  	(secundario "N/A")
   	(salud 5)
   	(ataque 8)
   	(hechizo 3)
@@ -470,7 +470,7 @@
   (campeon
   	(nombre "Jinx")
   	(primario "Marksman")
-  	(secundario nil)
+  	(secundario "N/A")
   	(salud 2)
   	(ataque 9)
   	(hechizo 4)
@@ -496,7 +496,7 @@
   (campeon
   	(nombre "Karthus")
   	(primario "Mage")
-  	(secundario nil)
+  	(secundario "N/A")
   	(salud 2)
   	(ataque 2)
   	(hechizo 10)
@@ -561,7 +561,7 @@
   (campeon
   	(nombre "Kha'Zix")
   	(primario "Assassin")
-  	(secundario nil)
+  	(secundario "N/A")
   	(salud 4)
   	(ataque 9)
   	(hechizo 3)
@@ -626,7 +626,7 @@
   (campeon
   	(nombre "Lissandra")
   	(primario "Mage")
-  	(secundario nil)
+  	(secundario "N/A")
   	(salud 5)
   	(ataque 2)
   	(hechizo 8)
@@ -639,7 +639,7 @@
   (campeon
   	(nombre "Lucian")
   	(primario "Marksman")
-  	(secundario nil)
+  	(secundario "N/A")
   	(salud 5)
   	(ataque 8)
   	(hechizo 3)
@@ -730,7 +730,7 @@
   (campeon
   	(nombre "Miss Fortune")
   	(primario "Marksman")
-  	(secundario nil)
+  	(secundario "N/A")
   	(salud 2)
   	(ataque 8)
   	(hechizo 5)
@@ -1003,7 +1003,7 @@
   (campeon
   	(nombre "Shaco")
   	(primario "Assassin")
-  	(secundario nil)
+  	(secundario "N/A")
   	(salud 4)
   	(ataque 8)
   	(hechizo 6)
@@ -1068,7 +1068,7 @@
   (campeon
   	(nombre "Sivir")
   	(primario "Marksman")
-  	(secundario nil)
+  	(secundario "N/A")
   	(salud 3)
   	(ataque 9)
   	(hechizo 1)
@@ -1237,7 +1237,7 @@
   (campeon
   	(nombre "Twisted Fate")
   	(primario "Mage")
-  	(secundario nil)
+  	(secundario "N/A")
   	(salud 2)
   	(ataque 6)
   	(hechizo 6)
@@ -1315,7 +1315,7 @@
   (campeon
   	(nombre "Veigar")
   	(primario "Mage")
-  	(secundario nil)
+  	(secundario "N/A")
   	(salud 2)
   	(ataque 2)
   	(hechizo 10)
@@ -1328,7 +1328,7 @@
   (campeon
   	(nombre "Vel'Koz")
   	(primario "Mage")
-  	(secundario nil)
+  	(secundario "N/A")
   	(salud 2)
   	(ataque 2)
   	(hechizo 10)
@@ -1354,7 +1354,7 @@
   (campeon
   	(nombre "Viktor")
   	(primario "Mage")
-  	(secundario nil)
+  	(secundario "N/A")
   	(salud 5)
   	(ataque 2)
   	(hechizo 9)
@@ -1497,7 +1497,7 @@
   (campeon
   	(nombre "Ziggs")
   	(primario "Mage")
-  	(secundario nil)
+  	(secundario "N/A")
   	(salud 4)
   	(ataque 2)
   	(hechizo 9)
