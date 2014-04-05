@@ -10,7 +10,7 @@
   	(fecha "2013-06-13")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Ahri")
@@ -23,7 +23,7 @@
   	(fecha "2011-12-14")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Akali")
@@ -36,7 +36,7 @@
   	(fecha "2010-05-11")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Alistar")
@@ -49,7 +49,7 @@
   	(fecha "2009-02-21")
   	(puntosip 1350)
   	(puntosrp 585)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Amumu")
@@ -62,7 +62,7 @@
   	(fecha "2009-06-26")
   	(puntosip 1350)
   	(puntosrp 585)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Anivia")
@@ -75,7 +75,7 @@
   	(fecha "2009-07-10")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Annie")
@@ -88,7 +88,7 @@
   	(fecha "2009-02-21")
   	(puntosip 450)
   	(puntosrp 260)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Ashe")
@@ -101,7 +101,7 @@
   	(fecha "2009-02-21")
   	(puntosip 450)
   	(puntosrp 260)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Blitzcrank")
@@ -114,7 +114,7 @@
   	(fecha "2009-09-02")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Brand")
@@ -127,7 +127,7 @@
   	(fecha "2011-04-12")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Caitlyn")
@@ -140,7 +140,7 @@
   	(fecha "2011-01-04")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Cassiopeia")
@@ -153,7 +153,7 @@
   	(fecha "2010-12-14")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Cho'Gath")
@@ -166,7 +166,7 @@
   	(fecha "2009-06-26")
   	(puntosip 1350)
   	(puntosrp 585)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Corki")
@@ -179,7 +179,7 @@
   	(fecha "2009-09-19")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Darius")
@@ -192,7 +192,7 @@
   	(fecha "2012-05-23")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Diana")
@@ -205,7 +205,7 @@
   	(fecha "2012-08-07")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Dr. Mundo")
@@ -218,7 +218,7 @@
   	(fecha "2009-09-02")
   	(puntosip 1350)
   	(puntosrp 585)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Draven")
@@ -231,7 +231,7 @@
   	(fecha "2012-06-06")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Elise")
@@ -244,7 +244,7 @@
   	(fecha "2012-10-26")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Evelynn")
@@ -257,7 +257,7 @@
   	(fecha "2009-05-01")
   	(puntosip 1350)
   	(puntosrp 585)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Ezreal")
@@ -270,7 +270,7 @@
   	(fecha "2010-03-16")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Fiddlesticks")
@@ -283,7 +283,7 @@
   	(fecha "2009-02-21")
   	(puntosip 1350)
   	(puntosrp 585)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Fiora")
@@ -296,7 +296,7 @@
   	(fecha "2012-02-29")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Fizz")
@@ -309,7 +309,7 @@
   	(fecha "2011-11-15")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Galio")
@@ -322,7 +322,7 @@
   	(fecha "2010-08-10")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Gangplank")
@@ -335,7 +335,7 @@
   	(fecha "2009-08-19")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Garen")
@@ -348,7 +348,7 @@
   	(fecha "2010-04-27")
   	(puntosip 450)
   	(puntosrp 260)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Gragas")
@@ -361,7 +361,7 @@
   	(fecha "2010-02-02")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Graves")
@@ -374,7 +374,7 @@
   	(fecha "2011-10-19")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Hecarim")
@@ -387,7 +387,7 @@
   	(fecha "2012-04-18")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Heimerdinger")
@@ -400,7 +400,7 @@
   	(fecha "2009-10-10")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Irelia")
@@ -413,7 +413,7 @@
   	(fecha "2010-11-16")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Janna")
@@ -426,7 +426,7 @@
   	(fecha "2009-09-02")
   	(puntosip 1350)
   	(puntosrp 585)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Jarvan IV")
@@ -439,7 +439,7 @@
   	(fecha "2011-03-01")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Jax")
@@ -452,7 +452,7 @@
   	(fecha "2009-02-21")
   	(puntosip 1350)
   	(puntosrp 585)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Jayce")
@@ -465,7 +465,7 @@
   	(fecha "2012-07-07")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Jinx")
@@ -478,7 +478,7 @@
   	(fecha "2013-10-10")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Karma")
@@ -491,7 +491,7 @@
   	(fecha "2011-02-01")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Karthus")
@@ -504,7 +504,7 @@
   	(fecha "2009-06-12")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Kassadin")
@@ -517,7 +517,7 @@
   	(fecha "2009-08-07")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Katarina")
@@ -530,7 +530,7 @@
   	(fecha "2009-09-19")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Kayle")
@@ -543,7 +543,7 @@
   	(fecha "2009-02-21")
   	(puntosip 450)
   	(puntosrp 260)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Kennen")
@@ -556,7 +556,7 @@
   	(fecha "2010-04-08")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Kha'Zix")
@@ -569,7 +569,7 @@
   	(fecha "2012-09-27")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Kog'Maw")
@@ -582,7 +582,7 @@
   	(fecha "2010-06-24")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "LeBlanc")
@@ -595,7 +595,7 @@
   	(fecha "2010-11-02")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Lee Sin")
@@ -608,7 +608,7 @@
   	(fecha "2011-04-01")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Leona")
@@ -621,7 +621,7 @@
   	(fecha "2011-07-13")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Lissandra")
@@ -634,7 +634,7 @@
   	(fecha "2013-04-30")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Lucian")
@@ -647,7 +647,7 @@
   	(fecha "2013-08-22")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Lulu")
@@ -660,7 +660,7 @@
   	(fecha "2012-03-20")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Lux")
@@ -673,7 +673,7 @@
   	(fecha "2010-10-19")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Malphite")
@@ -686,7 +686,7 @@
   	(fecha "2009-09-02")
   	(puntosip 1350)
   	(puntosrp 585)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Malzahar")
@@ -699,7 +699,7 @@
   	(fecha "2010-06-01")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Maokai")
@@ -712,7 +712,7 @@
   	(fecha "2011-02-16")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Master Yi")
@@ -725,7 +725,7 @@
   	(fecha "2009-02-21")
   	(puntosip 450)
   	(puntosrp 260)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Miss Fortune")
@@ -738,7 +738,7 @@
   	(fecha "2010-09-08")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Mordekaiser")
@@ -751,7 +751,7 @@
   	(fecha "2010-02-24")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Morgana")
@@ -764,7 +764,7 @@
   	(fecha "2009-02-21")
   	(puntosip 1350)
   	(puntosrp 585)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Nami")
@@ -777,7 +777,7 @@
   	(fecha "2012-12-07")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Nasus")
@@ -790,7 +790,7 @@
   	(fecha "2009-10-01")
   	(puntosip 1350)
   	(puntosrp 585)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Nautilus")
@@ -803,7 +803,7 @@
   	(fecha "2012-02-14")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Nidalee")
@@ -816,7 +816,7 @@
   	(fecha "2009-12-17")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Nocturne")
@@ -829,7 +829,7 @@
   	(fecha "2011-03-15")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Nunu")
@@ -842,7 +842,7 @@
   	(fecha "2009-02-21")
   	(puntosip 450)
   	(puntosrp 260)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Olaf")
@@ -855,7 +855,7 @@
   	(fecha "2010-06-09")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Orianna")
@@ -868,7 +868,7 @@
   	(fecha "2011-06-01")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Pantheon")
@@ -881,7 +881,7 @@
   	(fecha "2010-02-02")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Poppy")
@@ -894,7 +894,7 @@
   	(fecha "2010-01-13")
   	(puntosip 450)
   	(puntosrp 260)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Quinn")
@@ -907,7 +907,7 @@
   	(fecha "2013-03-01")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Rammus")
@@ -920,7 +920,7 @@
   	(fecha "2009-07-10")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Renekton")
@@ -933,7 +933,7 @@
   	(fecha "2011-01-17")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Rengar")
@@ -946,7 +946,7 @@
   	(fecha "2012-08-21")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Riven")
@@ -959,7 +959,7 @@
   	(fecha "2011-09-14")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Rumble")
@@ -972,7 +972,7 @@
   	(fecha "2011-04-26")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Ryze")
@@ -985,7 +985,7 @@
   	(fecha "2009-02-21")
   	(puntosip 450)
   	(puntosrp 260)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Sejuani")
@@ -998,7 +998,7 @@
   	(fecha "2012-01-17")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Shaco")
@@ -1011,7 +1011,7 @@
   	(fecha "2009-10-10")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Shen")
@@ -1024,7 +1024,7 @@
   	(fecha "2010-03-24")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Shyvana")
@@ -1037,7 +1037,7 @@
   	(fecha "2011-11-01")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Singed")
@@ -1050,7 +1050,7 @@
   	(fecha "2009-04-18")
   	(puntosip 1350)
   	(puntosrp 585)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Sion")
@@ -1063,7 +1063,7 @@
   	(fecha "2009-02-21")
   	(puntosip 1350)
   	(puntosrp 585)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Sivir")
@@ -1076,7 +1076,7 @@
   	(fecha "2009-02-21")
   	(puntosip 450)
   	(puntosrp 260)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Skarner")
@@ -1089,7 +1089,7 @@
   	(fecha "2011-08-09")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Sona")
@@ -1102,7 +1102,7 @@
   	(fecha "2010-09-20")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Soraka")
@@ -1115,7 +1115,7 @@
   	(fecha "2009-02-21")
   	(puntosip 450)
   	(puntosrp 260)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Swain")
@@ -1128,7 +1128,7 @@
   	(fecha "2010-10-05")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Syndra")
@@ -1141,7 +1141,7 @@
   	(fecha "2012-09-13")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Talon")
@@ -1154,7 +1154,7 @@
   	(fecha "2011-08-24")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Taric")
@@ -1167,7 +1167,7 @@
   	(fecha "2009-08-19")
   	(puntosip 1350)
   	(puntosrp 585)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Teemo")
@@ -1180,7 +1180,7 @@
   	(fecha "2009-02-21")
   	(puntosip 1350)
   	(puntosrp 585)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Thresh")
@@ -1193,7 +1193,7 @@
   	(fecha "2013-01-23")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Tristana")
@@ -1206,7 +1206,7 @@
   	(fecha "2009-02-21")
   	(puntosip 1350)
   	(puntosrp 585)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Trundle")
@@ -1219,7 +1219,7 @@
   	(fecha "2010-12-01")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Tryndamere")
@@ -1232,7 +1232,7 @@
   	(fecha "2009-05-01")
   	(puntosip 1350)
   	(puntosrp 585)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Twisted Fate")
@@ -1245,7 +1245,7 @@
   	(fecha "2009-02-21")
   	(puntosip 1350)
   	(puntosrp 585)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Twitch")
@@ -1258,7 +1258,7 @@
   	(fecha "2009-05-01")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Udyr")
@@ -1271,7 +1271,7 @@
   	(fecha "2009-12-02")
   	(puntosip 1350)
   	(puntosrp 585)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Urgot")
@@ -1284,7 +1284,7 @@
   	(fecha "2010-08-24")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Varus")
@@ -1297,7 +1297,7 @@
   	(fecha "2012-05-08")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Vayne")
@@ -1310,7 +1310,7 @@
   	(fecha "2011-05-10")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Veigar")
@@ -1323,7 +1323,7 @@
   	(fecha "2009-07-24")
   	(puntosip 1350)
   	(puntosrp 585)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Vel'Koz")
@@ -1336,7 +1336,7 @@
   	(fecha "2014-02-27")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Vi")
@@ -1349,7 +1349,7 @@
   	(fecha "2012-12-19")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Viktor")
@@ -1362,7 +1362,7 @@
   	(fecha "2011-12-29")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Vladimir")
@@ -1375,7 +1375,7 @@
   	(fecha "2010-07-27")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Volibear")
@@ -1388,7 +1388,7 @@
   	(fecha "2011-11-29")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Warwick")
@@ -1401,7 +1401,7 @@
   	(fecha "2009-02-21")
   	(puntosip 450)
   	(puntosrp 260)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Wukong")
@@ -1414,7 +1414,7 @@
   	(fecha "2011-07-26")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Xerath")
@@ -1427,7 +1427,7 @@
   	(fecha "2011-10-05")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Xin Zhao")
@@ -1440,7 +1440,7 @@
   	(fecha "2010-07-13")
   	(puntosip 3150)
   	(puntosrp 790)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Yasuo")
@@ -1453,7 +1453,7 @@
   	(fecha "2013-12-13")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Yorick")
@@ -1466,7 +1466,7 @@
   	(fecha "2011-06-22")
   	(puntosip 4800)
   	(puntosrp 880)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Zac")
@@ -1479,7 +1479,7 @@
   	(fecha "2013-03-29")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Zed")
@@ -1492,7 +1492,7 @@
   	(fecha "2012-11-13")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Ziggs")
@@ -1505,7 +1505,7 @@
   	(fecha "2012-02-01")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Zilean")
@@ -1518,7 +1518,7 @@
   	(fecha "2009-04-18")
   	(puntosip 1350)
   	(puntosrp 585)
-		(prioridad 100)
+  	(prioridad 100)
   )
   (campeon
   	(nombre "Zyra")
@@ -1531,6 +1531,6 @@
   	(fecha "2012-07-24")
   	(puntosip 6300)
   	(puntosrp 975)
-		(prioridad 100)
+  	(prioridad 100)
   )
 )

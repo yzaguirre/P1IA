@@ -11,8 +11,7 @@ do
 		# sed 's/^  )$/\t\t(good_against ${ga})\n  )/' ../src/hechos.clp
 		# sed 's/^  )$/\t\t(bad_against ${ba})\n  )/' ../src/hechos.clp
 		# sed 's/^  )$/\t\t(good_with ${gw})\n  )/' ../src/hechos.clp
-		sed 's/^  )$/\t\t(good_against ${ga})\n  )/' ../src/hechos.clp
-		sed 's/^  )$/\t\t(bad_against ${ba})\n  )/' ../src/hechos.clp
-		sed 's/^  )$/\t\t(good_with ${gw})\n  )/' ../src/hechos.clp
+		# sed 's/^  )$/  \t(good_against ${ga})\n  )/' ../src/hechos.clp | sed 's/^  )$/  \t(bad_against ${ba})\n  )/' | sed 's/^  )$/  \t(good_with ${gw})\n  )/' > ../src/hechos2.clp
+		sed -i 's/^  )$/  \t(good_against ${ga})\n  \t(bad_against ${ba})\n  \t(good_with ${gw})\n  )/' ../src/hechos.clp
 	done < ${name_nosuff}.ba.txt 3< ${name_nosuff}.ga.txt 4< ${name_nosuff}.gw.txt
 done < "$filename"
