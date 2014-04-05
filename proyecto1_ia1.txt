@@ -1,2 +1,9 @@
 http://leagueoflegends.wikia.com/wiki/List_of_champions
 http://www.lolcounter.com/champions
+
+EXPRESIONES REGULARES UTILIZADOS
+;<td>(.*)<td>(.*)<td>(.*)<td>(.*)<td>(.*)<td>(.*)<td>(.*)<td>(.*)<td>(.*)<td>(.*)\)$
+;(nombre "$1")\n(primario "$2")\n(secundario "$3")\n(salud "$4")\n(ataque "$5")\n(hechizo "$6")\n(dificultad "$7")\n(fecha "$8")\n(puntosip "$9")\n(puntosrp "$10")\n)
+
+(\(puntosrp.+\)\n
+$1\t\t(prioridad 0)\n

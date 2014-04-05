@@ -1,4 +1,3 @@
-(deffacts campeones "Campeones de fact-list"
   (campeon
     (nombre "Aatrox")
     (primario "Fighter")
@@ -1883,5 +1882,7 @@
     (puntosip 6300)
     (puntosrp 975)
     (prioridad 100)
+  	(good_against "Mordekaiser" "Ryze" "Thresh" "Karthus" "Leona" "Teemo" "Annie" "Twisted Fate" "Ahri" "Evelynn")
+  	(bad_against "Fizz" "Diana" "Katarina" "LeBlanc" "Akali" "Talon" "Kassadin" "Ahri" "Syndra" "Ahri")
+  	(good_with "Yasuo" "Jinx" "Vayne" "Caitlyn" "Ashe" "Corki" "Varus" "Draven" "Amumu" "Miss Fortune")
   )
-)

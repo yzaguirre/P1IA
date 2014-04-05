@@ -1,8 +1,8 @@
 #!/bin/bash
 # https://stackoverflow.com/questions/14256917/bash-select-all-code-between-a-multiline-div
-echo Bad against *.bad_against.txt
-echo Good against *.good_against.txt
-echo Good with *.good_with.txt
+echo Bad against *.ba.txt
+echo Good against *.ga.txt
+echo Good with *.gw.txt
 filename=champs.txt
 x=0
 while read -r nombre
