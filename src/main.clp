@@ -1,0 +1,31 @@
+(deftemplate campeon
+	(slot nombre (type STRING))
+	(slot primario (type STRING))
+	(slot secundario (type STRING))
+	(slot salud (type INTEGER))
+	(slot ataque (type INTEGER))
+	(slot hechizo (type INTEGER))
+	(slot dificultad (type INTEGER))
+	(slot fecha (type STRING))
+	(slot puntosip (type INTEGER))
+	(slot puntosrp (type INTEGER))
+	(slot prioridad (type INTEGER))
+	(multislot ga)
+	(multislot ba)
+	(multislot gw)
+)
+(defrule inicio
+(declare (salience 202))
+   (initial-fact)
+=>
+	(load-facts carga_facts.clp)
+	(printout t " Exito!!, Se cargaron los datos correctamente" crlf crlf )
+)
+(defrule Obtener-nombre
+(declare (salience 200))
+   (initial-fact)
+=>	
+	(printout t "Nombre al personaje que quiere ver la informacion" crlf )
+	(assert (objetivo  =(readline)))  
+	(printout t "" crlf )
+)
