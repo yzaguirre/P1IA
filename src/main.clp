@@ -13,19 +13,18 @@
 	(multislot ga)
 	(multislot ba)
 	(multislot gw)
-	(slot ban (type INTEGER))
 )
 (defglobal ?*equipo* = 0)
 (defglobal ?*player* = 0)
-(defrule efectuar-ban
-	(declare (salience 200))
-	(ban ?ban)
-	?b1 <- (campeon (nombre ?ban)(ban 0))
-=>
-	(modify ?b1 (ban 1))
+;(defrule efectuar-ban
+;	(declare (salience 200))
+;	(ban ?ban)
+;	?b1 <- (campeon (nombre ?ban)(ban 0))
+;=>
+;	(modify ?b1 (ban 1))
 	;(printout t "efectuando ban: " ?ban crlf)
-)
-(defrule ingreso-informacion-ban
+;)
+(defrule ingreso-informacion1
 (declare (salience 201))
    (initial-fact)
 =>	

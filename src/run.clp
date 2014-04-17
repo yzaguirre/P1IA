@@ -21,160 +21,227 @@
 (defglobal ?*op3* = 0)
 (defglobal ?*equipo* = 0)
 (defglobal ?*player* = 0)
-(defrule efectuar-ban
-	(declare (salience 200))
-	(ban ?ban)
-	?b1 <- (campeon (nombre ?ban)(ban 0))
+;(defrule le-fue-bien
+;	(salience 187)
+;	(comolefue 1)
+;	?p <- (campeon (nombre ?**))
+;=>
+;	(modify ?p (+ prioridad 1))
+;)
+;(defrule le-fue-mal
+;	(salience 187)
+;	(comolefue 0)
+;	?p <- (campeon (nombre ?**))
+;=>
+;	(modify ?p (- prioridad 1))
+;)
+;(defrule como-le-fue
+;(declare salience 186)
+;	(initial-fact)
+;=>
+;	(printout t "Le fue bien? si o no: ")
+;	(assert (comolefue =(readline)))
+;)
+
+;(defrule analisis-ingreso-jugador
+;	(declare (salience 187))
+;	?p <- (juega-con ?jA ?campeon)
+;	(juega-con ?jX ?campeon)
+;=>
+	;(printout t "Campeon " ?campeon " ya pertenece a jugador " ?jX)
+;)
+;(defrule ingreso-jugador1a
+;(declare (salience 200))
+	;(initial-fact)
+;
+	;(not (juega-con ?* ?*op1*))
+;
+;	(not (juega-con ?* ?*op2*))
+;
+;	(not (juega-con ?* ?*op3*))
+;=>
+;	(printout t "Jugador 1 equipo azul, estas son tus 3 recomendaciones de campeon: " crlf)
+;	()
+	;(bind ?campeon (readline))
+	;(assert (juega-con "1a" ?campeon))
+;)
+;analisar rol
+;no banneado (ban ?campeon)
+;no elegido (juega-con ?x ?campeon)
+;ordenarlos segun prioridad
+;top 3
+;assert juega-con j1a campeon
+; ORDEN DE ELECCION
+; 1a
+; 1m
+; 2m
+; 2a
+; 3a
+; 3m
+; 4m
+; 4a
+; 5a
+; 5m
+
+;(
+;  (4)
+;  (Pida su jugador)
+;  (5)
+;  )
+; -1 - 5
+(defrule ingreso-campeon
+  (declare (salience 200)); mas alto que los ingreso-#equipo
+  (con-posicion ?j ?pos)
+  (tiene-codigo ?posicion ?pos)
+  (puede-con ?pos ?rol)
+  ;not (ban ?nombre)
+  ;not (juega-con ?j ?nombre)
+  
+  ;(campeon (?nombre)(primario ?rol)) Or (campeon (secundario ?rol))
+  ;(order by prioridad)
+  ;(top tres)
 =>
-	(modify ?b1 (ban 1))
-	(printout t "efectuando ban: " ?ban crlf)
+  (printout t crlf "== " ?j " == " ?posicion " == " ?rol " ==" crlf crlf)
+  ;(juega-con ?j ?nombre)
 )
-(defrule Ingreso-Informacion-Ban
+(defrule ingreso-5m
+  (declare (salience 199))
+  (jugador "5m")
+=>
+  (printout t crlf "ELECCION DE POSICION" crlf "Posiciones disponibles:" crlf 
+    "1. Top" crlf "2. Mid" crlf "3. ADC" crlf "4. Support" crlf "5. Jungle" crlf 
+    "Jugador 5 de Equipo Morado, Elija su posicion: ")
+  (bind ?pos (read))
+  (assert(con-posicion "5m" ?pos))
+  ;(assert (jugador "5m")) ; proximo jugador que elije
+)
+(defrule ingreso-5a
+  (declare (salience 199))
+  (jugador "5a")
+=>
+  (printout t crlf "ELECCION DE POSICION" crlf "Posiciones disponibles:" crlf 
+    "1. Top" crlf "2. Mid" crlf "3. ADC" crlf "4. Support" crlf "5. Jungle" crlf 
+    "Jugador 5 de Equipo Azul, Elija su posicion: ")
+  (bind ?pos (read))
+  (assert(con-posicion "5a" ?pos))
+  (assert (jugador "5m")) ; proximo jugador que elije
+)
+(defrule ingreso-4a
+  (declare (salience 199))
+  (jugador "4a")
+=>
+  (printout t crlf "ELECCION DE POSICION" crlf "Posiciones disponibles:" crlf 
+    "1. Top" crlf "2. Mid" crlf "3. ADC" crlf "4. Support" crlf "5. Jungle" crlf 
+    "Jugador 4 de Equipo Azul, Elija su posicion: ")
+  (bind ?pos (read))
+  (assert(con-posicion "4a" ?pos))
+  (assert (jugador "5a")) ; proximo jugador que elije
+)
+(defrule ingreso-4m
+  (declare (salience 199))
+  (jugador "4m")
+=>
+  (printout t crlf "ELECCION DE POSICION" crlf "Posiciones disponibles:" crlf 
+    "1. Top" crlf "2. Mid" crlf "3. ADC" crlf "4. Support" crlf "5. Jungle" crlf 
+    "Jugador 4 de Equipo Morado, Elija su posicion: ")
+  (bind ?pos (read))
+  (assert(con-posicion "4m" ?pos))
+  (assert (jugador "4a")) ; proximo jugador que elije
+)
+(defrule ingreso-3m
+  (declare (salience 199))
+  (jugador "3m")
+=>
+  (printout t crlf "ELECCION DE POSICION" crlf "Posiciones disponibles:" crlf 
+    "1. Top" crlf "2. Mid" crlf "3. ADC" crlf "4. Support" crlf "5. Jungle" crlf 
+    "Jugador 3 de Equipo Morado, Elija su posicion: ")
+  (bind ?pos (read))
+  (assert(con-posicion "3m" ?pos))
+  (assert (jugador "4m")) ; proximo jugador que elije
+)
+(defrule ingreso-3a
+  (declare (salience 199))
+  (jugador "3a")
+=>
+  (printout t crlf "ELECCION DE POSICION" crlf "Posiciones disponibles:" crlf 
+    "1. Top" crlf "2. Mid" crlf "3. ADC" crlf "4. Support" crlf "5. Jungle" crlf 
+    "Jugador 3 de Equipo Azul, Elija su posicion: ")
+  (bind ?pos (read))
+  (assert(con-posicion "3a" ?pos))
+  (assert (jugador "3m")) ; proximo jugador que elije
+)
+(defrule ingreso-2a
+  (declare (salience 199))
+  (jugador "2a")
+=>
+  (printout t crlf "ELECCION DE POSICION" crlf "Posiciones disponibles:" crlf 
+    "1. Top" crlf "2. Mid" crlf "3. ADC" crlf "4. Support" crlf "5. Jungle" crlf 
+    "Jugador 2 de Equipo Azul, Elija su posicion: ")
+  (bind ?pos (read))
+  (assert(con-posicion "2a" ?pos))
+  (assert (jugador "3a")) ; proximo jugador que elije
+)
+(defrule ingreso-2m
+  (declare (salience 199))
+  (jugador "2m")
+=>
+  (printout t crlf "ELECCION DE POSICION" crlf "Posiciones disponibles:" crlf 
+    "1. Top" crlf "2. Mid" crlf "3. ADC" crlf "4. Support" crlf "5. Jungle" crlf 
+    "Jugador 2 de Equipo Morado, Elija su posicion: ")
+  (bind ?pos (read))
+  (assert(con-posicion "2m" ?pos))
+  (assert (jugador "2a")) ; proximo jugador que elije
+)
+(defrule ingreso-1m
+  (declare (salience 199))
+  (jugador "1m")
+=>
+  (printout t crlf "ELECCION DE POSICION" crlf "Posiciones disponibles:" crlf 
+    "1. Top" crlf "2. Mid" crlf "3. ADC" crlf "4. Support" crlf "5. Jungle" crlf 
+    "Jugador 1 de Equipo Morado, Elija su posicion: ")
+  (bind ?pos (read))
+  (assert(con-posicion "1m" ?pos))
+  (assert (jugador "2m")) ; proximo jugador que elije
+)
+(defrule ingreso-1a
+  (declare (salience 199))
+  (jugador "1a")
+=>
+  (printout t crlf "ELECCION DE POSICION" crlf "Posiciones disponibles:" crlf 
+    "1. Top" crlf "2. Mid" crlf "3. ADC" crlf "4. Support" crlf "5. Jungle" crlf 
+    "Jugador 1 de Equipo Azul, Elija su posicion: ")
+  (bind ?pos (read))
+  (assert (jugador "1m")) ; proximo jugador que elije
+  (assert(con-posicion "1a" ?pos))
+)
+
+
+(defrule ingreso-informacion1
 (declare (salience 201))
    (initial-fact)
 =>	
 	(printout t "Modo Blind-Pick" crlf)
 	
 	;(assert (flag201 1))
-	(printout t "Capitan equipo azul," crlf)
-	(printout t "Ingrese nombre de campeon 1 a bannear: ")
-	(assert (ban =(readline)))
-	
-	(printout t crlf "Capitan equipo morado," crlf)
-	(printout t "Ingrese nombre de campeon 2 a bannear: ")
-	(assert (ban =(readline)))
-
-	(printout t crlf "Capitan equipo azul," crlf)
-	(printout t "Ingrese nombre de campeon 3 a bannear: ")
-	(assert (ban =(readline)))
-	
-	(printout t crlf "Capitan equipo morado," crlf)
-	(printout t "Ingrese nombre de campeon 4 a bannear: ")
-	(assert (ban =(readline)))
-
-	(printout t crlf "Capitan equipo morado," crlf)
-	(printout t "Ingrese nombre de campeon 5 a bannear: ")
-	(assert (ban =(readline)))
-
-	(printout t crlf "Capitan equipo azul," crlf)
-	(printout t "Ingrese nombre de campeon 6 a bannear: ")
-	(assert (ban =(readline)))
+  (assert (ban "Irelia"))
+  (assert (ban "Janna"))
+  (assert (ban "Jarvan IV"))
+  (assert (ban "Jax"))
+  (assert (ban "Jayce"))
+  (assert (ban "Jinx"))
 
 	(printout t crlf "Ingrese equipo a pertener, Azul o Morado: ")
 	(bind ?*equipo* (readline))
 
 	(printout t crlf "Ingrese el # de jugador (1 - 6) del equipo " ?*equipo* ": ")
-	(bind ?*player* (readline))
-	(assert (ingreso 1))
+	(bind ?*player* (read))
 	(printout t crlf)
+  (assert (jugador "1a")) ; proximo jugador que elije
 )
-
 (defrule inicio
 (declare (salience 202))
-   (initial-fact)
+  (initial-fact)
 =>
-	;(printout t " Exito!!, Se cargaron los datos correctamente" crlf crlf )
-	(assert (campeon
-  (nombre "Aatrox")
-  (primario "Fighter")
-  (secundario "Tank")
-  (salud 4)
-  (ataque 8)
-  (hechizo 3)
-  (dificultad 6)
-  (fecha "2013-06-13")
-  (puntosip 6300)
-  (puntosrp 975)
-  (prioridad 100)
-  (ga "Yasuo" "Dr. Mundo" "Jinx" "Darius" "Katarina" "Nasus" "Akali" "Kassadin" "Zed" "Hecarim")
-  (ba "Jax" "LeBlanc" "Fiora" "Riven" "Teemo" "Pantheon" "Pantheon" "Yasuo" "Fizz" "Renekton")
-  (gw "Yasuo" "Caitlyn" "Darius" "Jinx" "Akali" "Teemo" "Ezreal" "Varus" "Thresh" "Corki")
-  (ban 0)
-  ))
-	(assert(campeon
-  (nombre "Ahri")
-  (primario "Mage")
-  (secundario "Assassin")
-  (salud 4)
-  (ataque 3)
-  (hechizo 8)
-  (dificultad 8)
-  (fecha "2011-12-14")
-  (puntosip 6300)
-  (puntosrp 975)
-  (prioridad 100)
-  (ga "Vel'Koz" "Karthus" "Xerath" "Twisted Fate" "Katarina" "Aatrox" "Teemo" "Fizz" "Zed" "Lux")
-  (ba "LeBlanc" "Talon" "Swain" "Annie" "Kassadin" "Diana" "Yasuo" "Malzahar" "Fizz" "Akali")
-  (gw "Vayne" "Caitlyn" "Alistar" "Draven" "Leona" "Katarina" "Blitzcrank" "Varus" "Jayce" "Jax")
-  (ban 0)
-))
-(assert(campeon
-  (nombre "Akali")
-  (primario "Assassin")
-  (secundario "N/A")
-  (salud 3)
-  (ataque 5)
-  (hechizo 8)
-  (dificultad 6)
-  (fecha "2010-05-11")
-  (puntosip 3150)
-  (puntosrp 790)
-  (prioridad 100)
-  (ga "Vel'Koz" "Yasuo" "Karthus" "Ezreal" "Yasuo" "Vel'Koz" "Fizz" "Zed" "Kassadin" "Nidalee")
-  (ba "Lee Sin" "Garen" "Mordekaiser" "Renekton" "Annie" "LeBlanc" "Lee Sin" "Fiddlesticks" "Kayle" "Lulu")
-  (gw "Aatrox" "Diana" "LeBlanc" "Jarvan IV" "Blitzcrank" "Teemo" "Shen" "Katarina" "Amumu" "Lee Sin")
-  (ban 0)
-))
-(assert(campeon
-  (nombre "Alistar")
-  (primario "Tank")
-  (secundario "N/A")
-  (salud 9)
-  (ataque 6)
-  (hechizo 5)
-  (dificultad 8)
-  (fecha "2009-02-21")
-  (puntosip 1350)
-  (puntosrp 585)
-  (prioridad 100)
-  (ga "Blitzcrank" "Leona" "Thresh" "Katarina" "Fiddlesticks" "Yasuo" "Taric" "Miss Fortune" "Nunu" "Draven")
-  (ba "Janna" "Vayne" "Lulu" "Cho'Gath" "Olaf" "Morgana" "Soraka" "Zyra" "Caitlyn" "Ahri")
-  (gw "Yasuo" "Draven" "Miss Fortune" "Jinx" "Caitlyn" "Ezreal" "Varus" "Vayne" "Corki" "Ashe")
-  (ban 0)
-))
-(assert(campeon
-  (nombre "Amumu")
-  (primario "Tank")
-  (secundario "Mage")
-  (salud 6)
-  (ataque 2)
-  (hechizo 8)
-  (dificultad 4)
-  (fecha "2009-06-26")
-  (puntosip 1350)
-  (puntosrp 585)
-  (prioridad 100)
-  (ga "Blitzcrank" "Katarina" "Yasuo" "Aatrox" "Akali" "Blitzcrank" "Cho'Gath" "Ahri" "Yorick" "Tryndamere")
-  (ba "Shyvana" "Lee Sin" "Dr. Mundo" "Shaco" "Xin Zhao" "Olaf" "Janna" "Kha'Zix" "Olaf" "Gragas")
-  (gw "Miss Fortune" "Nunu" "Katarina" "Vel'Koz" "Pantheon" "Morgana" "Leona" "Fiddlesticks" "Ezreal" "Zyra")
-  (ban 0)
-))
-(assert(campeon
-  (nombre "Anivia")
-  (primario "Mage")
-  (secundario "Support")
-  (salud 4)
-  (ataque 1)
-  (hechizo 10)
-  (dificultad 8)
-  (fecha "2009-07-10")
-  (puntosip 3150)
-  (puntosrp 790)
-  (prioridad 100)
-  (ga "Ryze" "Karthus" "Kayle" "Lissandra" "Ahri" "Teemo" "Zed" "Akali" "Twisted Fate" "Ahri")
-  (ba "Fizz" "Diana" "Kassadin" "Orianna" "Zed" "Gragas" "Talon" "LeBlanc" "Ahri" "Ziggs")
-  (gw "Jarvan IV" "Vayne" "Dr. Mundo" "Ashe" "Blitzcrank" "Aatrox" "Trundle" "Akali" "Draven" "Amumu")
-  (ban 0)
-)
-	)
+  (load-facts run_facts.clp)
+	(printout t " Exito!!, Se cargaron los datos correctamente" crlf crlf )
 )
