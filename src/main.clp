@@ -1,7 +1,5 @@
 (deftemplate campeon
 	(slot nombre (type STRING))
-	(slot primario (type STRING))
-	(slot secundario (type STRING))
 	(slot salud (type INTEGER))
 	(slot ataque (type INTEGER))
 	(slot hechizo (type INTEGER))
@@ -10,9 +8,6 @@
 	(slot puntosip (type INTEGER))
 	(slot puntosrp (type INTEGER))
 	(slot prioridad (type INTEGER))
-	(multislot ga)
-	(multislot ba)
-	(multislot gw)
 )
 (defglobal ?*equipo* = 0)
 (defglobal ?*player* = 0)

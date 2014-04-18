@@ -1,7 +1,5 @@
 (deftemplate campeon
 	(slot nombre (type STRING))
-	(slot primario (type STRING))
-	(slot secundario (type STRING))
 	(slot salud (type INTEGER))
 	(slot ataque (type INTEGER))
 	(slot hechizo (type INTEGER))
@@ -10,10 +8,6 @@
 	(slot puntosip (type INTEGER))
 	(slot puntosrp (type INTEGER))
 	(slot prioridad (type INTEGER))
-	(multislot ga)
-	(multislot ba)
-	(multislot gw)
-	(slot ban (type INTEGER))
 )
 ; Aatrox
 (defglobal ?*op1* = 0)
@@ -89,15 +83,21 @@
 ;  (5)
 ;  )
 ; -1 - 5
+;(defrule prioridad-gw
+  ;(juega-con ?j ?nombre)
+  ;?f1 <- (campeon (nombre ?nombre) (gw $?gw))
+  ;(juega-con ? $?gw )
+;=>
+  ;(modify ?f1 (+ prioridad 1))
+;)
 (defrule ingreso-campeon
   (declare (salience 200)); mas alto que los ingreso-#equipo
-  (con-posicion ?j ?pos)
-  (tiene-codigo ?posicion ?pos)
+  (con-posicion ?jugador ?equipo ?pos)(tiene-codigo ?posicion ?pos)
   (puede-con ?pos ?rol)
-  ;not (ban ?nombre)
-  ;not (juega-con ?j ?nombre)
-  
-  ;(campeon (?nombre)(primario ?rol)) Or (campeon (secundario ?rol))
+  (campeon )
+  ;(campeon (nombre ?nombre)(primario ?rol)) Or (campeon (secundario ?rol))
+  ;(juega-con ? ?&~?nombre)
+  ;(ban ?&~?nombre)
   ;(order by prioridad)
   ;(top tres)
 =>
@@ -105,114 +105,114 @@
   ;(juega-con ?j ?nombre)
 )
 (defrule ingreso-5m
-  (declare (salience 199))
-  (jugador "5m")
+  (declare (salience 190))
+  (jugador 5 "m")
 =>
   (printout t crlf "ELECCION DE POSICION" crlf "Posiciones disponibles:" crlf 
     "1. Top" crlf "2. Mid" crlf "3. ADC" crlf "4. Support" crlf "5. Jungle" crlf 
     "Jugador 5 de Equipo Morado, Elija su posicion: ")
   (bind ?pos (read))
-  (assert(con-posicion "5m" ?pos))
-  ;(assert (jugador "5m")) ; proximo jugador que elije
+  (assert(con-posicion 5 "m" ?pos))
+  ;(assert (jugador 5 "m")) ; proximo jugador que elije
 )
 (defrule ingreso-5a
-  (declare (salience 199))
-  (jugador "5a")
+  (declare (salience 190))
+  (jugador 5 "a")
 =>
   (printout t crlf "ELECCION DE POSICION" crlf "Posiciones disponibles:" crlf 
     "1. Top" crlf "2. Mid" crlf "3. ADC" crlf "4. Support" crlf "5. Jungle" crlf 
     "Jugador 5 de Equipo Azul, Elija su posicion: ")
   (bind ?pos (read))
-  (assert(con-posicion "5a" ?pos))
-  (assert (jugador "5m")) ; proximo jugador que elije
+  (assert(con-posicion 5 "a" ?pos))
+  (assert (jugador 5 "m")) ; proximo jugador que elije
 )
 (defrule ingreso-4a
-  (declare (salience 199))
-  (jugador "4a")
+  (declare (salience 190))
+  (jugador 4 "a")
 =>
   (printout t crlf "ELECCION DE POSICION" crlf "Posiciones disponibles:" crlf 
     "1. Top" crlf "2. Mid" crlf "3. ADC" crlf "4. Support" crlf "5. Jungle" crlf 
     "Jugador 4 de Equipo Azul, Elija su posicion: ")
   (bind ?pos (read))
-  (assert(con-posicion "4a" ?pos))
-  (assert (jugador "5a")) ; proximo jugador que elije
+  (assert(con-posicion 4 "a" ?pos))
+  (assert (jugador 5 "a")) ; proximo jugador que elije
 )
 (defrule ingreso-4m
-  (declare (salience 199))
-  (jugador "4m")
+  (declare (salience 190))
+  (jugador 4 "m")
 =>
   (printout t crlf "ELECCION DE POSICION" crlf "Posiciones disponibles:" crlf 
     "1. Top" crlf "2. Mid" crlf "3. ADC" crlf "4. Support" crlf "5. Jungle" crlf 
     "Jugador 4 de Equipo Morado, Elija su posicion: ")
   (bind ?pos (read))
-  (assert(con-posicion "4m" ?pos))
-  (assert (jugador "4a")) ; proximo jugador que elije
+  (assert(con-posicion 4 "m" ?pos))
+  (assert (jugador 4 "a")) ; proximo jugador que elije
 )
 (defrule ingreso-3m
-  (declare (salience 199))
-  (jugador "3m")
+  (declare (salience 190))
+  (jugador 3 "m")
 =>
   (printout t crlf "ELECCION DE POSICION" crlf "Posiciones disponibles:" crlf 
     "1. Top" crlf "2. Mid" crlf "3. ADC" crlf "4. Support" crlf "5. Jungle" crlf 
     "Jugador 3 de Equipo Morado, Elija su posicion: ")
   (bind ?pos (read))
-  (assert(con-posicion "3m" ?pos))
-  (assert (jugador "4m")) ; proximo jugador que elije
+  (assert(con-posicion 3 "m" ?pos))
+  (assert (jugador 4 "m")) ; proximo jugador que elije
 )
 (defrule ingreso-3a
-  (declare (salience 199))
-  (jugador "3a")
+  (declare (salience 190))
+  (jugador 3 "a")
 =>
   (printout t crlf "ELECCION DE POSICION" crlf "Posiciones disponibles:" crlf 
     "1. Top" crlf "2. Mid" crlf "3. ADC" crlf "4. Support" crlf "5. Jungle" crlf 
     "Jugador 3 de Equipo Azul, Elija su posicion: ")
   (bind ?pos (read))
-  (assert(con-posicion "3a" ?pos))
-  (assert (jugador "3m")) ; proximo jugador que elije
+  (assert(con-posicion 3 "a" ?pos))
+  (assert (jugador 3 "m")) ; proximo jugador que elije
 )
 (defrule ingreso-2a
-  (declare (salience 199))
-  (jugador "2a")
+  (declare (salience 190))
+  (jugador 2 "a")
 =>
   (printout t crlf "ELECCION DE POSICION" crlf "Posiciones disponibles:" crlf 
     "1. Top" crlf "2. Mid" crlf "3. ADC" crlf "4. Support" crlf "5. Jungle" crlf 
     "Jugador 2 de Equipo Azul, Elija su posicion: ")
   (bind ?pos (read))
-  (assert(con-posicion "2a" ?pos))
-  (assert (jugador "3a")) ; proximo jugador que elije
+  (assert(con-posicion 2 "a" ?pos))
+  (assert (jugador 3 "a")) ; proximo jugador que elije
 )
 (defrule ingreso-2m
-  (declare (salience 199))
-  (jugador "2m")
+  (declare (salience 190))
+  (jugador 2 "m")
 =>
   (printout t crlf "ELECCION DE POSICION" crlf "Posiciones disponibles:" crlf 
     "1. Top" crlf "2. Mid" crlf "3. ADC" crlf "4. Support" crlf "5. Jungle" crlf 
     "Jugador 2 de Equipo Morado, Elija su posicion: ")
   (bind ?pos (read))
-  (assert(con-posicion "2m" ?pos))
-  (assert (jugador "2a")) ; proximo jugador que elije
+  (assert(con-posicion 2 "m" ?pos))
+  (assert (jugador 2 "a")) ; proximo jugador que elije
 )
 (defrule ingreso-1m
-  (declare (salience 199))
-  (jugador "1m")
+  (declare (salience 190))
+  (jugador 1 "m")
 =>
   (printout t crlf "ELECCION DE POSICION" crlf "Posiciones disponibles:" crlf 
     "1. Top" crlf "2. Mid" crlf "3. ADC" crlf "4. Support" crlf "5. Jungle" crlf 
     "Jugador 1 de Equipo Morado, Elija su posicion: ")
   (bind ?pos (read))
-  (assert(con-posicion "1m" ?pos))
-  (assert (jugador "2m")) ; proximo jugador que elije
+  (assert(con-posicion 1 "m" ?pos))
+  (assert (jugador 2 "m")) ; proximo jugador que elije
 )
 (defrule ingreso-1a
-  (declare (salience 199))
-  (jugador "1a")
+  (declare (salience 190))
+  (jugador 1 "a")
 =>
   (printout t crlf "ELECCION DE POSICION" crlf "Posiciones disponibles:" crlf 
     "1. Top" crlf "2. Mid" crlf "3. ADC" crlf "4. Support" crlf "5. Jungle" crlf 
     "Jugador 1 de Equipo Azul, Elija su posicion: ")
   (bind ?pos (read))
-  (assert (jugador "1m")) ; proximo jugador que elije
-  (assert(con-posicion "1a" ?pos))
+  (assert (jugador 1 "m")) ; proximo jugador que elije
+  (assert(con-posicion 1 "a" ?pos))
 )
 
 
@@ -231,12 +231,12 @@
   (assert (ban "Jinx"))
 
 	(printout t crlf "Ingrese equipo a pertener, Azul o Morado: ")
-	(bind ?*equipo* (readline))
+	(bind ?*equipo* Azul)
 
 	(printout t crlf "Ingrese el # de jugador (1 - 6) del equipo " ?*equipo* ": ")
-	(bind ?*player* (read))
+	(bind ?*player* 1)
 	(printout t crlf)
-  (assert (jugador "1a")) ; proximo jugador que elije
+  (assert (jugador 1 "a")) ; proximo jugador que elije
 )
 (defrule inicio
 (declare (salience 202))
