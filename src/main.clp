@@ -62,6 +62,6 @@
 (declare (salience 202))
    (initial-fact)
 =>
-	(load-facts carga_facts.clp)
+	(load-facts main_facts.clp)
 	;(printout t " Exito!!, Se cargaron los datos correctamente" crlf crlf )
 )

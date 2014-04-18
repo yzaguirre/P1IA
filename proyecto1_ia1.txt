@@ -7,3 +7,39 @@ EXPRESIONES REGULARES UTILIZADOS
 
 (\(puntosrp.+\)\n
 $1\t\t(prioridad 0)\n
+
+support
+https://code.google.com/p/kbs-ia/source/browse/trunk/?r=65#trunk%2Fsrc
+
+multi-field variable
+$?<symbol>	can bind multi-field value
+$?			matches any multi-field value
+
+git recover deleted tar
+https://stackoverflow.com/questions/953481/restore-a-deleted-file-in-a-git-repo
+	git rev-list -n 1 HEAD -- "*tar*"
+	git checkout $(git rev-list -n 1 HEAD -- "*tar*")^ -- "web"
+MODIFICACION 1
+.+\(sa.+\n.+\n.+\n.+\n.+\n.+\n.+\n.+\n.+\n.+\n.+\n
+[nada]
+
+.+\(\w+ 
+nada
+
+"\)\n
+" 
+
+ \)
+)
+
+\w+\n
+tiene-rols 
+
+MODIFICACION EN .clp
+.+\(primario.+\n.+\n
+
+.+\(ga.+\n.+\n.+\n
+
+MODIFICACION 2
+
+hecho por unwrap 3.5, 4 y 5
