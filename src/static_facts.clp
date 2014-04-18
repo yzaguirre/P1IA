@@ -25,6 +25,7 @@
   (ga "Yasuo" "Dr. Mundo" "Jinx" "Darius" "Katarina" "Nasus" "Akali" "Kassadin" "Zed" "Hecarim")
   (ba "Jax" "LeBlanc" "Fiora" "Riven" "Teemo" "Pantheon" "Pantheon" "Yasuo" "Fizz" "Renekton")
   (gw "Yasuo" "Caitlyn" "Darius" "Jinx" "Akali" "Teemo" "Ezreal" "Varus" "Thresh" "Corki")
+  (ban 0)
 )
 (campeon
   (nombre "Ahri")
@@ -39,6 +40,7 @@
   (ga "Vel'Koz" "Karthus" "Xerath" "Twisted Fate" "Katarina" "Aatrox" "Teemo" "Fizz" "Zed" "Lux")
   (ba "LeBlanc" "Talon" "Swain" "Annie" "Kassadin" "Diana" "Yasuo" "Malzahar" "Fizz" "Akali")
   (gw "Vayne" "Caitlyn" "Alistar" "Draven" "Leona" "Katarina" "Blitzcrank" "Varus" "Jayce" "Jax")
+  (ban 0)
 )
 (campeon
   (nombre "Akali")
@@ -53,6 +55,7 @@
   (ga "Vel'Koz" "Yasuo" "Karthus" "Ezreal" "Yasuo" "Vel'Koz" "Fizz" "Zed" "Kassadin" "Nidalee")
   (ba "Lee Sin" "Garen" "Mordekaiser" "Renekton" "Annie" "LeBlanc" "Lee Sin" "Fiddlesticks" "Kayle" "Lulu")
   (gw "Aatrox" "Diana" "LeBlanc" "Jarvan IV" "Blitzcrank" "Teemo" "Shen" "Katarina" "Amumu" "Lee Sin")
+  (ban 0)
 )
 (campeon
   (nombre "Alistar")
@@ -67,6 +70,7 @@
   (ga "Blitzcrank" "Leona" "Thresh" "Katarina" "Fiddlesticks" "Yasuo" "Taric" "Miss Fortune" "Nunu" "Draven")
   (ba "Janna" "Vayne" "Lulu" "Cho'Gath" "Olaf" "Morgana" "Soraka" "Zyra" "Caitlyn" "Ahri")
   (gw "Yasuo" "Draven" "Miss Fortune" "Jinx" "Caitlyn" "Ezreal" "Varus" "Vayne" "Corki" "Ashe")
+  (ban 0)
 )
 (campeon
   (nombre "Amumu")
@@ -81,6 +85,7 @@
   (ga "Blitzcrank" "Katarina" "Yasuo" "Aatrox" "Akali" "Blitzcrank" "Cho'Gath" "Ahri" "Yorick" "Tryndamere")
   (ba "Shyvana" "Lee Sin" "Dr. Mundo" "Shaco" "Xin Zhao" "Olaf" "Janna" "Kha'Zix" "Olaf" "Gragas")
   (gw "Miss Fortune" "Nunu" "Katarina" "Vel'Koz" "Pantheon" "Morgana" "Leona" "Fiddlesticks" "Ezreal" "Zyra")
+  (ban 0)
 )
 (campeon
   (nombre "Anivia")
@@ -95,6 +100,7 @@
   (ga "Ryze" "Karthus" "Kayle" "Lissandra" "Ahri" "Teemo" "Zed" "Akali" "Twisted Fate" "Ahri")
   (ba "Fizz" "Diana" "Kassadin" "Orianna" "Zed" "Gragas" "Talon" "LeBlanc" "Ahri" "Ziggs")
   (gw "Jarvan IV" "Vayne" "Dr. Mundo" "Ashe" "Blitzcrank" "Aatrox" "Trundle" "Akali" "Draven" "Amumu")
+  (ban 0)
 )
 (campeon
   (nombre "Annie")
@@ -109,6 +115,7 @@
   (ga "Yasuo" "Akali" "Ahri" "Fizz" "Yasuo" "Katarina" "Thresh" "Kha'Zix" "Zed" "LeBlanc")
   (ba "Brand" "Orianna" "Morgana" "Aatrox" "Kassadin" "Syndra" "LeBlanc" "Syndra" "Ziggs" "Malzahar")
   (gw "Jinx" "Lucian" "Draven" "Caitlyn" "Ezreal" "Vayne" "Aatrox" "Ashe" "Varus" "Sivir")
+  (ban 0)
 )
 (campeon
   (nombre "Ashe")
@@ -123,6 +130,7 @@
   (ga "Udyr" "Vayne" "Jinx" "Darius" "Caitlyn" "Karthus" "Miss Fortune" "Jinx" "Aatrox" "Lucian")
   (ba "Ezreal" "Kha'Zix" "Graves" "Sivir" "Yasuo" "Master Yi" "Quinn" "Draven" "Caitlyn" "Aatrox")
   (gw "Thresh" "Nami" "Taric" "Soraka" "Zyra" "Lulu" "Alistar" "Leona" "Blitzcrank" "Janna")
+  (ban 0)
 )
 (campeon
   (nombre "Blitzcrank")
@@ -137,6 +145,7 @@
   (ga "Sona" "Draven" "Kog'Maw" "Varus" "Soraka" "Caitlyn" "Jinx" "Katarina" "Miss Fortune" "Lux")
   (ba "Alistar" "Leona" "Sivir" "Thresh" "Ezreal" "Morgana" "Amumu" "Taric" "Lulu" "Nidalee")
   (gw "Thresh" "Yasuo" "Jinx" "Miss Fortune" "Varus" "Draven" "Vayne" "Ezreal" "Quinn" "Graves")
+  (ban 0)
 )
 (campeon
   (nombre "Brand")
@@ -151,6 +160,7 @@
   (ga "Annie" "Ryze" "Yasuo" "Heimerdinger" "Gragas" "Teemo" "Yasuo" "Akali" "Lissandra" "Fizz")
   (ba "Kassadin" "Galio" "Fizz" "LeBlanc" "Yasuo" "Ziggs" "Aatrox" "Zed" "Gragas" "Talon")
   (gw "Amumu" "Jarvan IV" "Sona" "Annie" "Leona" "Vladimir" "Aatrox" "Malphite" "Maokai" "Galio")
+  (ban 0)
 )
 (campeon
   (nombre "Caitlyn")
@@ -165,6 +175,7 @@
   (ga "Vayne" "Quinn" "Corki" "Graves" "Ezreal" "Quinn" "Aatrox" "Twitch" "Jinx" "Ashe")
   (ba "Sivir" "Jinx" "Yasuo" "Varus" "Jinx" "Tristana" "Lucian" "Kog'Maw" "Aatrox" "Leona")
   (gw "Leona" "Sona" "Thresh" "Nami" "Soraka" "Aatrox" "Alistar" "Lulu" "Janna" "Nunu")
+  (ban 0)
 )
 (campeon
   (nombre "Cassiopeia")
@@ -179,6 +190,7 @@
   (ga "Ryze" "Mordekaiser" "Yasuo" "Nunu" "Yasuo" "Swain" "Zed" "Vladimir" "Fizz" "Akali")
   (ba "Galio" "LeBlanc" "Talon" "Fizz" "Gragas" "Ahri" "Diana" "Orianna" "Kassadin" "Lux")
   (gw "Teemo" "Singed" "Yorick" "Ahri" "Jarvan IV" "Katarina" "Amumu" "Twitch" "Akali" "Malphite")
+  (ban 0)
 )
 (campeon
   (nombre "Cho'Gath")
@@ -193,6 +205,7 @@
   (ga "Yorick" "Katarina" "Malphite" "Nasus" "Darius" "Yasuo" "Teemo" "Renekton" "Diana" "Akali")
   (ba "Warwick" "Vayne" "Kog'Maw" "Kayle" "Aatrox" "Lee Sin" "Fizz" "Jax" "Garen" "Xin Zhao")
   (gw "Yasuo" "Lulu" "Aatrox" "Pantheon" "Darius" "Teemo" "Jax" "Alistar" "Evelynn" "Kassadin")
+  (ban 0)
 )
 (campeon
   (nombre "Corki")
@@ -207,6 +220,7 @@
   (ga "Jinx" "Tristana" "Twitch" "Vayne" "Ezreal" "Graves" "Jinx" "Ashe" "Sivir" "Quinn")
   (ba "Caitlyn" "Draven" "Varus" "Urgot" "Lucian" "Aatrox" "Kog'Maw" "Akali" "Ashe" "Miss Fortune")
   (gw "Thresh" "Nami" "Leona" "Alistar" "Lulu" "Zyra" "Nunu" "Aatrox" "Sona" "Janna")
+  (ban 0)
 )
 (campeon
   (nombre "Darius")
@@ -221,6 +235,7 @@
   (ga "Yasuo" "Wukong" "Dr. Mundo" "Nasus" "Poppy" "Tryndamere" "Jax" "Renekton" "Riven" "Garen")
   (ba "Kayle" "Yorick" "Jayce" "Teemo" "Aatrox" "Elise" "Pantheon" "Kennen" "Cho'Gath" "Zed")
   (gw "Aatrox" "Draven" "Teemo" "Fiora" "Katarina" "Volibear" "Blitzcrank" "Xin Zhao" "Talon" "Pantheon")
+  (ban 0)
 )
 (campeon
   (nombre "Diana")
@@ -235,6 +250,7 @@
   (ga "Katarina" "Vel'Koz" "Twisted Fate" "Yasuo" "Fizz" "Tristana" "Karthus" "Yasuo" "Zed" "Ahri")
   (ba "Mordekaiser" "Irelia" "Riven" "Swain" "Cho'Gath" "Aatrox" "Syndra" "Jax" "Malzahar" "LeBlanc")
   (gw "Yasuo" "Akali" "Kassadin" "Lee Sin" "Leona" "Alistar" "Orianna" "Jarvan IV" "Amumu" "Aatrox")
+  (ban 0)
 )
 (campeon
   (nombre "Dr. Mundo")
@@ -249,6 +265,7 @@
   (ga "Ezreal" "Vayne" "Lucian" "Jinx" "Tristana" "Miss Fortune" "Sivir" "Corki" "Ashe" "Twitch")
   (ba "Varus" "Thresh" "Blitzcrank" "Caitlyn" "Nami" "Aatrox" "Quinn" "Leona" "Teemo" "Taric")
   (gw "Sona" "Lulu" "Alistar" "Nami" "Thresh" "Leona" "Blitzcrank" "Soraka" "Annie" "Taric")
+  (ban 0)
 )
 (campeon
   (nombre "Draven")
@@ -263,6 +280,7 @@
   (ga "Nasus" "Amumu" "Jax" "Riven" "Singed" "Aatrox" "Renekton" "Maokai" "Wukong" "Teemo")
   (ba "Trundle" "Kog'Maw" "Aatrox" "Darius" "Shyvana" "Fizz" "Elise" "Riven" "Aatrox" "Yasuo")
   (gw "Anivia" "Nidalee" "Aatrox" "Teemo" "Jax" "Ezreal" "Varus" "Olaf" "Shen" "Singed")
+  (ban 0)
 )
 (campeon
   (nombre "Elise")
@@ -277,6 +295,7 @@
   (ga "Singed" "Pantheon" "Renekton" "Darius" "Garen" "Dr. Mundo" "Fizz" "Shyvana" "Jarvan IV" "Nasus")
   (ba "Kassadin" "Yorick" "Mordekaiser" "Wukong" "LeBlanc" "Malzahar" "Gangplank" "Riven" "Aatrox" "Vladimir")
   (gw "Rengar" "Blitzcrank" "Leona" "Ahri" "Orianna" "Karma" "Amumu" "Alistar" "Caitlyn" "Darius")
+  (ban 0)
 )
 (campeon
   (nombre "Evelynn")
@@ -291,6 +310,7 @@
   (ga "Karthus" "Gragas" "Morgana" "Lux" "Amumu" "Ahri" "Nidalee" "Fizz" "Ahri" "Akali")
   (ba "Ryze" "Kassadin" "Mordekaiser" "Lee Sin" "Lee Sin" "Cassiopeia" "Malzahar" "Annie" "Ahri" "Talon")
   (gw "Shen" "Orianna" "Cho'Gath" "Aatrox" "Udyr" "Zilean" "Fizz" "Jax" "Amumu" "Veigar")
+  (ban 0)
 )
 (campeon
   (nombre "Ezreal")
@@ -305,6 +325,7 @@
   (ga "Ashe" "Jinx" "Blitzcrank" "Lucian" "Nami" "Thresh" "Jinx" "Teemo" "Ahri" "Lux")
   (ba "Draven" "Miss Fortune" "Graves" "Akali" "Twitch" "Caitlyn" "Sivir" "Yasuo" "LeBlanc" "Tristana")
   (gw "Thresh" "Nunu" "Taric" "Sona" "Nami" "Alistar" "Leona" "Blitzcrank" "Lulu" "Morgana")
+  (ban 0)
 )
 (campeon
   (nombre "Fiddlesticks")
@@ -319,6 +340,7 @@
   (ga "Katarina" "Vladimir" "Akali" "Fizz" "Master Yi" "Yasuo" "Zed" "Akali" "Fizz" "LeBlanc")
   (ba "Janna" "Diana" "Xin Zhao" "Alistar" "Aatrox" "Cho'Gath" "Kassadin" "Tristana" "Ahri" "Syndra")
   (gw "Amumu" "Jinx" "Galio" "Ashe" "Jarvan IV" "Caitlyn" "Vayne" "Kennen" "Varus" "Orianna")
+  (ban 0)
 )
 (campeon
   (nombre "Fiora")
@@ -333,6 +355,7 @@
   (ga "Yasuo" "Gangplank" "Aatrox" "Rengar" "Riven" "Nasus" "Master Yi" "Kha'Zix" "Zed" "Jayce")
   (ba "Jax" "Pantheon" "Malphite" "Renekton" "Singed" "Darius" "Irelia" "Vladimir" "Garen" "Nasus")
   (gw "Darius" "Amumu" "Ahri" "Blitzcrank" "Morgana" "Lee Sin" "Lux" "Volibear" "Jarvan IV" "Aatrox")
+  (ban 0)
 )
 (campeon
   (nombre "Fizz")
@@ -347,6 +370,7 @@
   (ga "Vel'Koz" "Karthus" "Twisted Fate" "Veigar" "Anivia" "Lux" "Yasuo" "Yasuo" "Zyra" "Syndra")
   (ba "Mordekaiser" "Ryze" "Kayle" "Diana" "Lissandra" "LeBlanc" "Akali" "Elise" "Pantheon" "Annie")
   (gw "Leona" "Aatrox" "Nami" "Amumu" "Yasuo" "Jarvan IV" "Vi" "Malphite" "Ahri" "Rammus")
+  (ban 0)
 )
 (campeon
   (nombre "Galio")
@@ -361,6 +385,7 @@
   (ga "Cassiopeia" "LeBlanc" "Brand" "Malzahar" "Veigar" "Fizz" "Kassadin" "Akali" "Teemo" "Swain")
   (ba "Udyr" "Talon" "Talon" "Janna" "Yasuo" "Kha'Zix" "Zed" "Lux" "Olaf" "Nasus")
   (gw "Katarina" "Miss Fortune" "Orianna" "Wukong" "Nunu" "Fiddlesticks" "Amumu" "Malphite" "Kennen" "Morgana")
+  (ban 0)
 )
 (campeon
   (nombre "Gangplank")
@@ -375,6 +400,7 @@
   (ga "Malzahar" "Kassadin" "Aatrox" "Nasus" "Morgana" "Elise" "Kha'Zix" "Rengar" "Singed" "Teemo")
   (ba "Pantheon" "Fiora" "Udyr" "Renekton" "Riven" "Jax" "Irelia" "Lee Sin" "Darius" "Poppy")
   (gw "Amumu" "Twisted Fate" "Aatrox" "Hecarim" "Janna" "Ahri" "Pantheon" "Quinn" "Nidalee" "Sona")
+  (ban 0)
 )
 (campeon
   (nombre "Garen")
@@ -389,6 +415,7 @@
   (ga "Riven" "Akali" "Yasuo" "Wukong" "Jax" "Yasuo" "Nasus" "Aatrox" "Renekton" "Aatrox")
   (ba "Teemo" "Elise" "Pantheon" "Yorick" "Aatrox" "Jayce" "Shyvana" "Darius" "Aatrox" "Kayle")
   (gw "Aatrox" "Lux" "Katarina" "Darius" "Amumu" "Ashe" "Xin Zhao" "Jarvan IV" "Alistar" "Blitzcrank")
+  (ban 0)
 )
 (campeon
   (nombre "Gragas")
@@ -403,6 +430,7 @@
   (ga "Karthus" "Vel'Koz" "Lux" "Katarina" "Kayle" "Akali" "Talon" "Katarina" "Orianna" "Heimerdinger")
   (ba "Yasuo" "Fizz" "Yasuo" "Syndra" "Mordekaiser" "LeBlanc" "Aatrox" "Kha'Zix" "Ahri" "Ziggs")
   (gw "Ashe" "Malphite" "Kha'Zix" "Aatrox" "Yasuo" "Jax" "Amumu" "Jarvan IV" "Taric" "Udyr")
+  (ban 0)
 )
 (campeon
   (nombre "Graves")
@@ -417,6 +445,7 @@
   (ga "Varus" "Ezreal" "Vayne" "Jinx" "Ashe" "Lucian" "Quinn" "Jinx" "Twitch" "Nocturne")
   (ba "Sivir" "Urgot" "Caitlyn" "Miss Fortune" "Corki" "Draven" "Tristana" "Aatrox" "Taric" "Rammus")
   (gw "Thresh" "Taric" "Nunu" "Leona" "Sona" "Soraka" "Nami" "Blitzcrank" "Janna" "Alistar")
+  (ban 0)
 )
 (campeon
   (nombre "Hecarim")
@@ -431,6 +460,7 @@
   (ga "Kha'Zix" "Soraka" "Akali" "Darius" "Lee Sin" "Xin Zhao" "Irelia" "Jax" "Volibear" "Riven")
   (ba "Nasus" "Sejuani" "Aatrox" "Sejuani" "Nasus" "Sejuani" "Shyvana" "Lee Sin" "Warwick" "Udyr")
   (gw "Orianna" "Jayce" "Zilean" "Lulu" "Nunu" "Janna" "Sona" "Gangplank" "Sivir" "Karma")
+  (ban 0)
 )
 (campeon
   (nombre "Heimerdinger")
@@ -445,6 +475,7 @@
   (ga "Kassadin" "Katarina" "Akali" "Yasuo" "Ahri" "Teemo" "Zed" "Diana" "Kha'Zix" "LeBlanc")
   (ba "Syndra" "Vel'Koz" "Zed" "Ziggs" "Morgana" "Malzahar" "Yasuo" "Lux" "Xerath" "Brand")
   (gw "Blitzcrank" "Teemo" "Amumu" "Vi" "Skarner" "Thresh" "Lee Sin" "Ezreal" "Darius" "Zyra")
+  (ban 0)
 )
 (campeon
   (nombre "Irelia")
@@ -459,6 +490,7 @@
   (ga "Yasuo" "Diana" "Zed" "Vladimir" "Aatrox" "Gangplank" "Jayce" "Teemo" "Fiora" "Riven")
   (ba "Olaf" "Udyr" "Jax" "Renekton" "Pantheon" "Aatrox" "Lee Sin" "Teemo" "Volibear" "Elise")
   (gw "Ahri" "Riven" "Lee Sin" "Akali" "Aatrox" "Orianna" "Nunu" "Malphite" "Jarvan IV" "Anivia")
+  (ban 0)
 )
 (campeon
   (nombre "Janna")
@@ -473,6 +505,7 @@
   (ga "Kennen" "Alistar" "Fiddlesticks" "Leona" "Thresh" "Galio" "Amumu" "Morgana" "Nunu" "Udyr")
   (ba "Sona" "Sivir" "Nami" "Aatrox" "Diana" "Skarner" "Maokai" "Morgana" "Soraka" "Blitzcrank")
   (gw "Yasuo" "Varus" "Jinx" "Vayne" "Tristana" "Quinn" "Caitlyn" "Draven" "Sivir" "Lucian")
+  (ban 0)
 )
 (campeon
   (nombre "Jarvan IV")
@@ -487,6 +520,7 @@
   (ga "Vladimir" "Jayce" "Kayle" "Olaf" "Teemo" "Renekton" "Garen" "Nasus" "Kha'Zix" "Riven")
   (ba "Yorick" "Elise" "Vi" "Jax" "Lee Sin" "Shen" "Aatrox" "Thresh" "Xin Zhao" "Renekton")
   (gw "Yasuo" "Orianna" "Miss Fortune" "Kennen" "Wukong" "Vladimir" "Lux" "Anivia" "Leona" "Nunu")
+  (ban 0)
 )
 (campeon
   (nombre "Jax")
@@ -501,6 +535,7 @@
   (ga "Yasuo" "Aatrox" "Fiora" "Master Yi" "Xin Zhao" "Vi" "Tryndamere" "Rengar" "Zed" "Yasuo")
   (ba "Malphite" "Singed" "Renekton" "Garen" "Pantheon" "Jayce" "Kayle" "Aatrox" "Darius" "Teemo")
   (gw "Aatrox" "Ahri" "Xin Zhao" "Amumu" "Jarvan IV" "Teemo" "Darius" "Blitzcrank" "Pantheon" "Alistar")
+  (ban 0)
 )
 (campeon
   (nombre "Jayce")
@@ -515,6 +550,7 @@
   (ga "Darius" "Shen" "Singed" "Kha'Zix" "Jax" "Katarina" "Teemo" "Garen" "Aatrox" "Volibear")
   (ba "Yorick" "Fiora" "Nidalee" "Irelia" "Yasuo" "Wukong" "Pantheon" "Ahri" "Xin Zhao" "Elise")
   (gw "Ahri" "Volibear" "Sona" "Nidalee" "Blitzcrank" "Hecarim" "Darius" "Soraka" "Taric" "Vi")
+  (ban 0)
 )
 (campeon
   (nombre "Jinx")
@@ -529,6 +565,7 @@
   (ga "Caitlyn" "Caitlyn" "Vayne" "Kog'Maw" "Ashe" "Twitch" "Miss Fortune" "Lucian" "Ashe" "Draven")
   (ba "Corki" "Sivir" "Ezreal" "Lucian" "Varus" "Quinn" "Aatrox" "Draven" "Tristana" "Vayne")
   (gw "Soraka" "Leona" "Taric" "Thresh" "Blitzcrank" "Janna" "Alistar" "Morgana" "Nami" "Annie")
+  (ban 0)
 )
 (campeon
   (nombre "Karma")
@@ -543,6 +580,7 @@
   (ga "Vi" "Fizz" "Diana" "Akali" "Karthus" "Leona" "Kassadin" "Zilean" "Katarina" "Ahri")
   (ba "Veigar" "Nami" "Malzahar" "Talon" "LeBlanc" "Lux" "Xerath" "Cassiopeia" "Ahri" "Aatrox")
   (gw "Jinx" "Ezreal" "Sivir" "Caitlyn" "Lucian" "Vayne" "Ashe" "Varus" "Draven" "Miss Fortune")
+  (ban 0)
 )
 (campeon
   (nombre "Karthus")
@@ -557,6 +595,7 @@
   (ga "Yasuo" "Vel'Koz" "Heimerdinger" "Quinn" "Teemo" "Lucian" "Teemo" "Ryze" "Tryndamere" "Nami")
   (ba "Soraka" "Kassadin" "Fizz" "Katarina" "Lux" "LeBlanc" "Veigar" "Ahri" "Akali" "Gragas")
   (gw "Amumu" "Kayle" "Yorick" "Shen" "Soraka" "Zilean" "Vladimir" "Aatrox" "Nocturne" "Nunu")
+  (ban 0)
 )
 (campeon
   (nombre "Kassadin")
@@ -571,6 +610,7 @@
   (ga "Karthus" "Lissandra" "Brand" "Katarina" "Vel'Koz" "Elise" "Lux" "Ahri" "Veigar" "Twisted Fate")
   (ba "Talon" "Pantheon" "Heimerdinger" "Kha'Zix" "LeBlanc" "Mordekaiser" "Kayle" "Yasuo" "Gangplank" "Sion")
   (gw "Diana" "Aatrox" "Lee Sin" "Ahri" "Akali" "Amumu" "Cho'Gath" "Kha'Zix" "Maokai" "Ashe")
+  (ban 0)
 )
 (campeon
   (nombre "Katarina")
@@ -585,6 +625,7 @@
   (ga "Karthus" "Vel'Koz" "Vel'Koz" "Teemo" "Lux" "Aatrox" "Akali" "Zyra" "Yasuo" "Morgana")
   (ba "Diana" "Fiddlesticks" "Lissandra" "Malzahar" "Cho'Gath" "Alistar" "Vi" "Heimerdinger" "Kayle" "Talon")
   (gw "Amumu" "Sona" "Leona" "Orianna" "Aatrox" "Nunu" "Galio" "Wukong" "Darius" "Ahri")
+  (ban 0)
 )
 (campeon
   (nombre "Kayle")
@@ -599,6 +640,7 @@
   (ga "Zed" "Darius" "Yasuo" "Zed" "Singed" "Yasuo" "Katarina" "Olaf" "Fizz" "Kassadin")
   (ba "Pantheon" "Anivia" "Gragas" "Xin Zhao" "Ziggs" "LeBlanc" "Annie" "Malzahar" "Jarvan IV" "Orianna")
   (gw "Aatrox" "Ezreal" "Vayne" "Draven" "Katarina" "Karthus" "Jinx" "Caitlyn" "Tryndamere" "Varus")
+  (ban 0)
 )
 (campeon
   (nombre "Kennen")
@@ -613,6 +655,7 @@
   (ga "Riven" "Olaf" "Singed" "Darius" "Nasus" "Katarina" "Akali" "Jax" "Renekton" "Volibear")
   (ba "Janna" "Yorick" "Ryze" "Swain" "Aatrox" "Pantheon" "LeBlanc" "Elise" "Lux" "Kassadin")
   (gw "Jarvan IV" "Amumu" "Malphite" "Katarina" "Orianna" "Vladimir" "Fiddlesticks" "Leona" "Akali" "Galio")
+  (ban 0)
 )
 (campeon
   (nombre "Kha'Zix")
@@ -627,6 +670,7 @@
   (ga "Kassadin" "Ashe" "Yasuo" "Gragas" "Twisted Fate" "Nidalee" "Zed" "Nasus" "Ziggs" "Singed")
   (ba "Lee Sin" "Yorick" "Pantheon" "Rengar" "LeBlanc" "Jayce" "Jax" "Kayle" "Aatrox" "Fiora")
   (gw "Rengar" "Aatrox" "Zed" "Jarvan IV" "Xin Zhao" "Lux" "Ahri" "Morgana" "Blitzcrank" "Katarina")
+  (ban 0)
 )
 (campeon
   (nombre "Kog'Maw")
@@ -641,6 +685,7 @@
   (ga "Dr. Mundo" "Caitlyn" "Cho'Gath" "Ashe" "Vayne" "Draven" "Ezreal" "Quinn" "Tristana" "Varus")
   (ba "Jinx" "Blitzcrank" "Akali" "Sivir" "LeBlanc" "Draven" "Miss Fortune" "Tristana" "Thresh" "Ahri")
   (gw "Nunu" "Sona" "Thresh" "Nami" "Leona" "Blitzcrank" "Alistar" "Soraka" "Taric" "Lulu")
+  (ban 0)
 )
 (campeon
   (nombre "LeBlanc")
@@ -655,6 +700,7 @@
   (ga "Vel'Koz" "Ahri" "Karthus" "Ziggs" "Yasuo" "Aatrox" "Yasuo" "Orianna" "Kassadin" "Katarina")
   (ba "Galio" "Sion" "Syndra" "Mordekaiser" "Akali" "Yasuo" "Annie" "Aatrox" "Yasuo" "Kayle")
   (gw "Akali" "Udyr" "Amumu" "Maokai" "Veigar" "Aatrox" "Lee Sin" "Rammus" "Ahri" "Leona")
+  (ban 0)
 )
 (campeon
   (nombre "Lee Sin")
@@ -669,6 +715,7 @@
   (ga "Akali" "Shaco" "Wukong" "Kha'Zix" "Talon" "Twitch" "Yasuo" "Akali" "Katarina" "Aatrox")
   (ba "Trundle" "Udyr" "Udyr" "Garen" "Renekton" "Aatrox" "Jax" "Fiora" "Pantheon" "Elise")
   (gw "Yasuo" "Jarvan IV" "Teemo" "Aatrox" "Thresh" "Ahri" "Darius" "Orianna" "Alistar" "Diana")
+  (ban 0)
 )
 (campeon
   (nombre "Leona")
@@ -683,6 +730,7 @@
   (ga "Blitzcrank" "Sona" "Varus" "Caitlyn" "Draven" "Ashe" "Jinx" "Miss Fortune" "Thresh" "Katarina")
   (ba "Morgana" "Alistar" "Lulu" "Janna" "Annie" "Thresh" "Karma" "Zyra" "Sivir" "Lux")
   (gw "Caitlyn" "Jinx" "Quinn" "Lucian" "Miss Fortune" "Draven" "Vayne" "Tristana" "Katarina" "Corki")
+  (ban 0)
 )
 (campeon
   (nombre "Lissandra")
@@ -697,6 +745,7 @@
   (ga "Katarina" "Fizz" "Zed" "Katarina" "Yasuo" "Akali" "Ahri" "Riven" "Yasuo" "LeBlanc")
   (ba "Kassadin" "LeBlanc" "Anivia" "Diana" "Lux" "Ahri" "Swain" "Aatrox" "Brand" "Morgana")
   (gw "Sejuani" "Trundle" "Ashe" "Amumu" "Malphite" "Jarvan IV" "Nunu" "Fiddlesticks" "Aatrox" "Anivia")
+  (ban 0)
 )
 (campeon
   (nombre "Lucian")
@@ -711,6 +760,7 @@
   (ga "Varus" "Jinx" "Caitlyn" "Nasus" "Thresh" "Ashe" "Varus" "Ezreal" "Aatrox" "Miss Fortune")
   (ba "Vayne" "Draven" "Vayne" "Ezreal" "Aatrox" "Quinn" "Caitlyn" "Graves" "Tristana" "Yasuo")
   (gw "Thresh" "Taric" "Leona" "Lulu" "Annie" "Nami" "Soraka" "Janna" "Blitzcrank" "Alistar")
+  (ban 0)
 )
 (campeon
   (nombre "Lulu")
@@ -725,6 +775,7 @@
   (ga "Thresh" "Leona" "Akali" "Katarina" "Nami" "Taric" "LeBlanc" "Fizz" "Akali" "Zed")
   (ba "Soraka" "Syndra" "Sona" "Sivir" "Caitlyn" "Ziggs" "Talon" "Viktor" "Brand" "Lucian")
   (gw "Draven" "Miss Fortune" "Vayne" "Varus" "Yasuo" "Jinx" "Caitlyn" "Lucian" "Tristana" "Ezreal")
+  (ban 0)
 )
 (campeon
   (nombre "Lux")
@@ -739,6 +790,7 @@
   (ga "Karthus" "Ryze" "Karthus" "Lissandra" "Heimerdinger" "Aatrox" "Teemo" "Twisted Fate" "Akali" "Annie")
   (ba "Talon" "Yasuo" "Fizz" "Kassadin" "Gragas" "Zed" "Yasuo" "Kayle" "Aatrox" "LeBlanc")
   (gw "Jinx" "Ezreal" "Varus" "Morgana" "Nidalee" "Vayne" "Jarvan IV" "Sivir" "Garen" "Corki")
+  (ban 0)
 )
 (campeon
   (nombre "Malphite")
@@ -753,6 +805,7 @@
   (ga "Jax" "Fiora" "Xin Zhao" "Tryndamere" "Yasuo" "Xin Zhao" "Aatrox" "Riven" "Wukong" "Kha'Zix")
   (ba "Rumble" "Yorick" "Cho'Gath" "Darius" "Vladimir" "Garen" "Zac" "Riven" "Aatrox" "Nasus")
   (gw "Yasuo" "Orianna" "Lulu" "Amumu" "Katarina" "Kennen" "Jarvan IV" "Ashe" "Aatrox" "Zyra")
+  (ban 0)
 )
 (campeon
   (nombre "Malzahar")
@@ -767,6 +820,7 @@
   (ga "Katarina" "Yasuo" "Yasuo" "Vladimir" "Heimerdinger" "Zed" "Ahri" "Akali" "Fizz" "Vel'Koz")
   (ba "Gangplank" "Galio" "LeBlanc" "Syndra" "Ziggs" "Morgana" "Talon" "Aatrox" "Lux" "Annie")
   (gw "Warwick" "Jarvan IV" "Amumu" "Maokai" "Skarner" "Nocturne" "Aatrox" "Viktor" "Anivia" "Syndra")
+  (ban 0)
 )
 (campeon
   (nombre "Maokai")
@@ -781,6 +835,7 @@
   (ga "Karthus" "Katarina" "Vladimir" "Elise" "Rengar" "Ezreal" "Hecarim" "Janna" "Blitzcrank" "Nunu")
   (ba "Shyvana" "Shyvana" "Dr. Mundo" "Shyvana" "Lee Sin" "Shaco" "Xin Zhao" "Singed" "Hecarim" "Nocturne")
   (gw "Orianna" "Swain" "Ryze" "Zyra" "Rumble" "LeBlanc" "Anivia" "Veigar" "Malzahar" "Brand")
+  (ban 0)
 )
 (campeon
   (nombre "Master Yi")
@@ -795,6 +850,7 @@
   (ga "Karthus" "Ashe" "Lux" "Yasuo" "Katarina" "Heimerdinger" "Twisted Fate" "Aatrox" "Nasus" "Aatrox")
   (ba "Jax" "Pantheon" "Teemo" "Rammus" "Aatrox" "Renekton" "Riven" "Fiora" "Lee Sin" "Darius")
   (gw "Aatrox" "Ashe" "Amumu" "Lux" "Darius" "Blitzcrank" "Morgana" "Ahri" "Teemo" "Jax")
+  (ban 0)
 )
 (campeon
   (nombre "Miss Fortune")
@@ -809,6 +865,7 @@
   (ga "Soraka" "Ezreal" "Jinx" "Vayne" "Dr. Mundo" "Jinx" "Graves" "Quinn" "Aatrox" "Caitlyn")
   (ba "Tristana" "Taric" "Draven" "Aatrox" "Caitlyn" "Quinn" "Yasuo" "Varus" "Sivir" "Caitlyn")
   (gw "Amumu" "Lulu" "Blitzcrank" "Alistar" "Soraka" "Leona" "Thresh" "Jarvan IV" "Nami" "Sona")
+  (ban 0)
 )
 (campeon
   (nombre "Mordekaiser")
@@ -823,6 +880,7 @@
   (ga "Diana" "Fizz" "Yasuo" "Akali" "Yasuo" "Kassadin" "Nasus" "Morgana" "Zed" "Katarina")
   (ba "Zyra" "Cassiopeia" "Swain" "Garen" "Aatrox" "Kayle" "Yorick" "Malzahar" "Ziggs" "Lux")
   (gw "Yorick" "Wukong" "Malphite" "Amumu" "Skarner" "Aatrox" "Ahri" "Kennen" "Kayle" "Warwick")
+  (ban 0)
 )
 (campeon
   (nombre "Morgana")
@@ -837,6 +895,7 @@
   (ga "Leona" "Thresh" "Blitzcrank" "Heimerdinger" "Yasuo" "Sion" "Akali" "Ahri" "Thresh" "Fizz")
   (ba "Talon" "Mordekaiser" "Vladimir" "Zed" "Akali" "Fizz" "Aatrox" "Gangplank" "Katarina" "LeBlanc")
   (gw "Jinx" "Sivir" "Ezreal" "Caitlyn" "Amumu" "Varus" "Lux" "Vayne" "Draven" "Lucian")
+  (ban 0)
 )
 (campeon
   (nombre "Nami")
@@ -851,6 +910,7 @@
   (ga "Draven" "Taric" "Katarina" "Thresh" "Urgot" "Karma" "Janna" "Leona" "Nunu" "Caitlyn")
   (ba "Lulu" "Ezreal" "Fizz" "Morgana" "Leona" "Blitzcrank" "Vayne" "Sona" "Yasuo" "Sivir")
   (gw "Yasuo" "Vayne" "Ashe" "Tristana" "Caitlyn" "Draven" "Varus" "Corki" "Jinx" "Sivir")
+  (ban 0)
 )
 (campeon
   (nombre "Nasus")
@@ -865,6 +925,7 @@
   (ga "Hecarim" "Aatrox" "Yasuo" "Yasuo" "Rengar" "Tryndamere" "Irelia" "Kha'Zix" "Aatrox" "Malphite")
   (ba "Teemo" "Rumble" "Pantheon" "Mordekaiser" "Garen" "Olaf" "Kayle" "Vladimir" "Aatrox" "Darius")
   (gw "Renekton" "Aatrox" "Lulu" "Zed" "Kayle" "Kha'Zix" "Malphite" "Amumu" "Alistar" "Ashe")
+  (ban 0)
 )
 (campeon
   (nombre "Nautilus")
@@ -879,6 +940,7 @@
   (ga "Katarina" "Evelynn" "Jax" "Skarner" "Ahri" "Malphite" "Fizz" "Galio" "Shen" "Thresh")
   (ba "Shyvana" "Shyvana" "Shyvana" "Shyvana" "Udyr" "Lee Sin" "Vi" "Nunu" "Lulu" "Olaf")
   (gw "Yasuo" "Thresh" "Ezreal" "Vayne" "Ashe" "Caitlyn" "Teemo" "Draven" "Corki" "Graves")
+  (ban 0)
 )
 (campeon
   (nombre "Nidalee")
@@ -893,6 +955,7 @@
   (ga "Vel'Koz" "Karthus" "Jayce" "Singed" "Garen" "Lux" "Gragas" "Aatrox" "Teemo" "Heimerdinger")
   (ba "Yasuo" "Pantheon" "Fizz" "Zed" "LeBlanc" "Akali" "Talon" "Syndra" "Aatrox" "Diana")
   (gw "Jinx" "Draven" "Caitlyn" "Vayne" "Lux" "Varus" "Aatrox" "Miss Fortune" "Ezreal" "Ashe")
+  (ban 0)
 )
 (campeon
   (nombre "Nocturne")
@@ -907,6 +970,7 @@
   (ga "Twisted Fate" "Darius" "Lee Sin" "Veigar" "Shen" "Xin Zhao" "Karthus" "Shen" "Elise" "Lee Sin")
   (ba "Olaf" "Udyr" "Graves" "Karma" "Vi" "Shyvana" "Aatrox" "Xin Zhao" "Kha'Zix" "Ahri")
   (gw "Twisted Fate" "Shen" "Orianna" "Lucian" "Pantheon" "Rengar" "Ahri" "Karthus" "Malzahar" "Ashe")
+  (ban 0)
 )
 (campeon
   (nombre "Nunu")
@@ -921,6 +985,7 @@
   (ga "Yorick" "Jax" "Singed" "Heimerdinger" "Teemo" "Tryndamere" "Nasus" "Fiora" "Veigar" "Irelia")
   (ba "Cassiopeia" "Sona" "Sivir" "Soraka" "Janna" "Alistar" "Riven" "Leona" "Thresh" "Nami")
   (gw "Amumu" "Graves" "Kog'Maw" "Ezreal" "Vayne" "Caitlyn" "Draven" "Corki" "Tristana" "Varus")
+  (ban 0)
 )
 (campeon
   (nombre "Olaf")
@@ -935,6 +1000,7 @@
   (ga "Irelia" "Poppy" "Shyvana" "Riven" "Yasuo" "Nasus" "Wukong" "Aatrox" "Renekton" "Teemo")
   (ba "Kayle" "Yorick" "Kennen" "Volibear" "Aatrox" "Fiora" "Darius" "Elise" "Jax" "Aatrox")
   (gw "Blitzcrank" "Darius" "Aatrox" "Amumu" "Orianna" "Skarner" "Dr. Mundo" "Diana" "Teemo" "Kayle")
+  (ban 0)
 )
 (campeon
   (nombre "Orianna")
@@ -949,6 +1015,7 @@
   (ga "Karthus" "Ryze" "Annie" "Anivia" "Fizz" "Yasuo" "Heimerdinger" "Nidalee" "Akali" "Kayle")
   (ba "Syndra" "LeBlanc" "Diana" "Yasuo" "Gragas" "Ahri" "Ziggs" "Aatrox" "Yasuo" "Zed")
   (gw "Yasuo" "Malphite" "Jarvan IV" "Katarina" "Zac" "Leona" "Aatrox" "Alistar" "Vi" "Miss Fortune")
+  (ban 0)
 )
 (campeon
   (nombre "Pantheon")
@@ -963,6 +1030,7 @@
   (ga "Gangplank" "Kassadin" "Fiora" "Nidalee" "Yasuo" "Nasus" "Teemo" "Master Yi" "Rengar" "Kayle")
   (ba "Udyr" "Elise" "Shen" "Olaf" "Yorick" "Aatrox" "Malphite" "Cho'Gath" "Darius" "Aatrox")
   (gw "Amumu" "Taric" "Blitzcrank" "Darius" "Aatrox" "Jarvan IV" "Sion" "Teemo" "Shen" "Jax")
+  (ban 0)
 )
 (campeon
   (nombre "Poppy")
@@ -977,6 +1045,7 @@
   (ga "Gangplank" "Tryndamere" "Kha'Zix" "Riven" "Vi" "Nasus" "Jax" "Malphite" "Zed" "Rengar")
   (ba "Olaf" "Darius" "Teemo" "Irelia" "Ahri" "Renekton" "Kennen" "Yorick" "Rumble" "Kayle")
   (gw "Vayne" "Cho'Gath" "Alistar" "Aatrox" "Blitzcrank" "Nocturne" "Jax" "Shen" "Jayce" "Kayle")
+  (ban 0)
 )
 (campeon
   (nombre "Quinn")
@@ -991,6 +1060,7 @@
   (ga "Vayne" "Jinx" "Ashe" "Ezreal" "Lucian" "Draven" "Tryndamere" "Aatrox" "Twitch" "Riven")
   (ba "Caitlyn" "Caitlyn" "Varus" "Miss Fortune" "Tristana" "Draven" "Graves" "Corki" "Kog'Maw" "Aatrox")
   (gw "Leona" "Thresh" "Janna" "Sona" "Lulu" "Nami" "Blitzcrank" "Taric" "Alistar" "Soraka")
+  (ban 0)
 )
 (campeon
   (nombre "Rammus")
@@ -1005,6 +1075,7 @@
   (ga "Tryndamere" "Master Yi" "Yasuo" "Fiora" "Aatrox" "Katarina" "Graves" "Soraka" "Jax" "Riven")
   (ba "Trundle" "Olaf" "Vi" "Shyvana" "Dr. Mundo" "Vi" "Vi" "Yorick" "Cho'Gath" "Morgana")
   (gw "Ashe" "Yasuo" "Shen" "Fizz" "Ahri" "Orianna" "Teemo" "Fiddlesticks" "Twisted Fate" "Jax")
+  (ban 0)
 )
 (campeon
   (nombre "Renekton")
@@ -1019,6 +1090,7 @@
   (ga "Yasuo" "Jax" "Akali" "Yasuo" "Aatrox" "Riven" "Wukong" "Fiora" "Aatrox" "Tryndamere")
   (ba "Vayne" "Ryze" "Elise" "Trundle" "Garen" "Olaf" "Shyvana" "Mordekaiser" "Aatrox" "Volibear")
   (gw "Nasus" "Aatrox" "Lulu" "Ahri" "Amumu" "Orianna" "Alistar" "Lee Sin" "Blitzcrank" "Cho'Gath")
+  (ban 0)
 )
 (campeon
   (nombre "Rengar")
@@ -1033,6 +1105,7 @@
   (ga "Kha'Zix" "Yasuo" "Aatrox" "Renekton" "Nasus" "Kha'Zix" "Riven" "Tryndamere" "Aatrox" "Singed")
   (ba "Pantheon" "Jax" "Fiora" "Lee Sin" "Renekton" "Darius" "Nasus" "Teemo" "Riven" "Aatrox")
   (gw "Kha'Zix" "Orianna" "Aatrox" "Elise" "Shen" "Jax" "Nocturne" "Zilean" "Ahri" "Alistar")
+  (ban 0)
 )
 (campeon
   (nombre "Riven")
@@ -1047,6 +1120,7 @@
   (ga "Yasuo" "Katarina" "Aatrox" "Vel'Koz" "Diana" "Dr. Mundo" "Fizz" "Vladimir" "Aatrox" "Nasus")
   (ba "Garen" "Olaf" "Kennen" "Renekton" "LeBlanc" "Shyvana" "Jax" "Pantheon" "Fiora" "Aatrox")
   (gw "Yasuo" "Vi" "Aatrox" "Orianna" "Ahri" "Amumu" "Irelia" "Shyvana" "Jarvan IV" "Lee Sin")
+  (ban 0)
 )
 (campeon
   (nombre "Rumble")
@@ -1061,6 +1135,7 @@
   (ga "Malphite" "Nasus" "Teemo" "Akali" "Singed" "Zed" "Aatrox" "Renekton" "Jax" "Vladimir")
   (ba "Yorick" "Viktor" "Xin Zhao" "Elise" "Aatrox" "Darius" "Jayce" "Volibear" "Riven" "Pantheon")
   (gw "Jarvan IV" "Amumu" "Sejuani" "Sona" "Kennen" "Maokai" "Orianna" "Galio" "Leona" "Morgana")
+  (ban 0)
 )
 (campeon
   (nombre "Ryze")
@@ -1075,6 +1150,7 @@
   (ga "Yasuo" "Yasuo" "Fizz" "Veigar" "Renekton" "Evelynn" "Nasus" "Kennen" "Kha'Zix" "Singed")
   (ba "Cassiopeia" "Xerath" "Anivia" "Brand" "Ziggs" "LeBlanc" "Orianna" "Lux" "Aatrox" "Zyra")
   (gw "Jarvan IV" "Maokai" "Aatrox" "Ahri" "Amumu" "Udyr" "Lee Sin" "Blitzcrank" "Jax" "Cho'Gath")
+  (ban 0)
 )
 (campeon
   (nombre "Sejuani")
@@ -1089,6 +1165,7 @@
   (ga "Hecarim" "Hecarim" "Hecarim" "Katarina" "Darius" "Evelynn" "Anivia" "Akali" "Sivir" "Elise")
   (ba "Xin Zhao" "Lee Sin" "Morgana" "Olaf" "Elise" "Quinn" "Nocturne" "Jarvan IV" "Udyr" "Shyvana")
   (gw "Katarina" "Lissandra" "Wukong" "Talon" "Rumble" "Yasuo" "Leona" "Orianna" "Ashe" "Anivia")
+  (ban 0)
 )
 (campeon
   (nombre "Shaco")
@@ -1103,6 +1180,7 @@
   (ga "Amumu" "Master Yi" "Xerath" "Maokai" "Twitch" "Ashe" "Darius" "Master Yi" "Nocturne" "Yorick")
   (ba "Lee Sin" "Vi" "Riven" "Warwick" "Olaf" "Rengar" "Nasus" "Shyvana" "Brand" "Jax")
   (gw "Blitzcrank" "Shen" "Teemo" "Yorick" "Singed" "Lee Sin" "Urgot" "Evelynn" "Heimerdinger" "Orianna")
+  (ban 0)
 )
 (campeon
   (nombre "Shen")
@@ -1117,6 +1195,7 @@
   (ga "Pantheon" "Kha'Zix" "Zed" "Renekton" "Fiora" "Malphite" "Jax" "Nasus" "Jarvan IV" "Riven")
   (ba "Yorick" "Warwick" "Jayce" "Vladimir" "Teemo" "Jax" "Kayle" "Aatrox" "Aatrox" "Garen")
   (gw "Twisted Fate" "Twitch" "Caitlyn" "Nocturne" "Zed" "Ezreal" "Akali" "Rengar" "Ashe" "Pantheon")
+  (ban 0)
 )
 (campeon
   (nombre "Shyvana")
@@ -1131,6 +1210,7 @@
   (ga "Nautilus" "Nautilus" "Nautilus" "Nautilus" "Amumu" "Maokai" "Dr. Mundo" "Riven" "Nasus" "Wukong")
   (ba "Olaf" "Elise" "Teemo" "Darius" "Pantheon" "Trundle" "Fiora" "Yorick" "Vi" "Yasuo")
   (gw "Orianna" "Riven" "Jarvan IV" "Shen" "Yasuo" "Nautilus" "Malphite" "Lulu" "Darius" "Janna")
+  (ban 0)
 )
 (campeon
   (nombre "Singed")
@@ -1145,6 +1225,7 @@
   (ga "Jax" "Zed" "Fiora" "Tryndamere" "Irelia" "Aatrox" "Wukong" "Nasus" "Renekton" "Shen")
   (ba "Teemo" "Elise" "Kayle" "Vladimir" "Kennen" "Yorick" "Jayce" "Renekton" "Aatrox" "Vayne")
   (gw "Cassiopeia" "Volibear" "Teemo" "Lulu" "Aatrox" "Sion" "Orianna" "Darius" "Blitzcrank" "Zilean")
+  (ban 0)
 )
 (campeon
   (nombre "Sion")
@@ -1159,6 +1240,7 @@
   (ga "LeBlanc" "Kassadin" "Talon" "Riven" "Irelia" "Aatrox" "Katarina" "Tryndamere" "Renekton" "Fizz")
   (ba "Morgana" "Teemo" "Nasus" "Jax" "Teemo" "Darius" "Garen" "Riven" "Mordekaiser" "Pantheon")
   (gw "Pantheon" "Talon" "Singed" "Taric" "Alistar" "Jax" "Syndra" "Volibear" "Darius" "Ahri")
+  (ban 0)
 )
 (campeon
   (nombre "Sivir")
@@ -1173,6 +1255,7 @@
   (ga "Caitlyn" "Blitzcrank" "Jinx" "Graves" "Taric" "Varus" "Ezreal" "Ashe" "Thresh" "Karthus")
   (ba "Vayne" "Draven" "Twitch" "Kha'Zix" "Aatrox" "Miss Fortune" "Corki" "Tristana" "Draven" "Lucian")
   (gw "Morgana" "Thresh" "Nami" "Leona" "Soraka" "Lulu" "Janna" "Taric" "Sona" "Blitzcrank")
+  (ban 0)
 )
 (campeon
   (nombre "Skarner")
@@ -1187,6 +1270,7 @@
   (ga "Mordekaiser" "Vi" "Katarina" "Warwick" "Rengar" "Janna" "Hecarim" "Tryndamere" "Rammus" "Jax")
   (ba "Morgana" "Ashe" "Olaf" "Shyvana" "Gangplank" "Nautilus" "Ryze" "Ahri" "Nunu" "Janna")
   (gw "Thresh" "Orianna" "Jayce" "Heimerdinger" "Mordekaiser" "Blitzcrank" "Malzahar" "Katarina" "Olaf" "Teemo")
+  (ban 0)
 )
 (campeon
   (nombre "Sona")
@@ -1201,6 +1285,7 @@
   (ga "Trundle" "Twitch" "Janna" "Nunu" "Lulu" "Vayne" "Jax" "Nami" "Taric" "Thresh")
   (ba "Blitzcrank" "Thresh" "Leona" "Draven" "Miss Fortune" "Taric" "Aatrox" "Nidalee" "Zyra" "Graves")
   (gw "Draven" "Caitlyn" "Vayne" "Tristana" "Katarina" "Kog'Maw" "Ezreal" "Quinn" "Graves" "Miss Fortune")
+  (ban 0)
 )
 (campeon
   (nombre "Soraka")
@@ -1215,6 +1300,7 @@
   (ga "Karthus" "Yasuo" "Wukong" "Urgot" "Lulu" "Katarina" "Lucian" "Nunu" "Akali" "Nasus")
   (ba "Miss Fortune" "Tristana" "Blitzcrank" "Varus" "Zac" "Leona" "Hecarim" "Thresh" "Shen" "Aatrox")
   (gw "Jinx" "Caitlyn" "Miss Fortune" "Vayne" "Draven" "Urgot" "Ashe" "Sivir" "Lucian" "Ezreal")
+  (ban 0)
 )
 (campeon
   (nombre "Swain")
@@ -1229,6 +1315,7 @@
   (ga "Vladimir" "Yasuo" "Ahri" "Kassadin" "Yasuo" "Akali" "Zed" "Diana" "Kennen" "Mordekaiser")
   (ba "Viktor" "Cassiopeia" "LeBlanc" "Ziggs" "Tristana" "Syndra" "Galio" "Fizz" "Brand" "Fizz")
   (gw "Maokai" "Aatrox" "Amumu" "Diana" "Jarvan IV" "Vladimir" "Alistar" "Darius" "Sejuani" "Skarner")
+  (ban 0)
 )
 (campeon
   (nombre "Syndra")
@@ -1243,6 +1330,7 @@
   (ga "Heimerdinger" "Vel'Koz" "Orianna" "Nidalee" "LeBlanc" "Yasuo" "Katarina" "Ahri" "Zed" "Gragas")
   (ba "Fizz" "Talon" "Yasuo" "Kayle" "Yasuo" "Ziggs" "Kassadin" "Gragas" "Aatrox" "LeBlanc")
   (gw "Nami" "Zac" "Zilean" "Teemo" "Maokai" "Thresh" "Sion" "Amumu" "Kha'Zix" "Aatrox")
+  (ban 0)
 )
 (campeon
   (nombre "Talon")
@@ -1257,6 +1345,7 @@
   (ga "Kassadin" "Lux" "Vel'Koz" "Morgana" "Veigar" "Ahri" "Katarina" "Ziggs" "Zed" "Yasuo")
   (ba "Lee Sin" "Pantheon" "Yorick" "Diana" "Kayle" "Gragas" "LeBlanc" "Aatrox" "Riven" "Mordekaiser")
   (gw "Zed" "Katarina" "Darius" "Sejuani" "Sion" "Aatrox" "Amumu" "Ryze" "Fizz" "Diana")
+  (ban 0)
 )
 (campeon
   (nombre "Taric")
@@ -1271,6 +1360,7 @@
   (ga "Miss Fortune" "Blitzcrank" "Vayne" "Draven" "Thresh" "Caitlyn" "Graves" "Sona" "Ezreal" "Riven")
   (ba "Sivir" "Lulu" "Morgana" "Nami" "Alistar" "Varus" "Corki" "Leona" "Thresh" "Janna")
   (gw "Graves" "Ashe" "Jinx" "Lucian" "Ezreal" "Vayne" "Draven" "Miss Fortune" "Varus" "Sivir")
+  (ban 0)
 )
 (campeon
   (nombre "Teemo")
@@ -1285,6 +1375,7 @@
   (ga "Tryndamere" "Singed" "Nasus" "Garen" "Darius" "Aatrox" "Yasuo" "Aatrox" "Volibear" "Master Yi")
   (ba "Yorick" "Pantheon" "Rumble" "Zed" "LeBlanc" "Jayce" "Renekton" "Akali" "Aatrox" "Yasuo")
   (gw "Aatrox" "Darius" "Cassiopeia" "Twitch" "Lee Sin" "Ashe" "Blitzcrank" "Caitlyn" "Ahri" "Katarina")
+  (ban 0)
 )
 (campeon
   (nombre "Thresh")
@@ -1299,6 +1390,7 @@
   (ga "Blitzcrank" "Draven" "Sona" "Leona" "Caitlyn" "Jarvan IV" "Katarina" "Miss Fortune" "Varus" "Soraka")
   (ba "Lulu" "Morgana" "Alistar" "Annie" "Lucian" "Sivir" "Morgana" "Zyra" "Janna" "Aatrox")
   (gw "Ashe" "Ezreal" "Blitzcrank" "Corki" "Graves" "Vayne" "Jinx" "Caitlyn" "Lucian" "Sivir")
+  (ban 0)
 )
 (campeon
   (nombre "Tristana")
@@ -1313,6 +1405,7 @@
   (ga "Miss Fortune" "Jinx" "Caitlyn" "Vayne" "Jinx" "Soraka" "Dr. Mundo" "Katarina" "Varus" "Ezreal")
   (ba "Corki" "Diana" "Draven" "Caitlyn" "Sivir" "Kog'Maw" "Twitch" "Lux" "Caitlyn" "Akali")
   (gw "Sona" "Nami" "Janna" "Leona" "Thresh" "Lulu" "Soraka" "Nunu" "Taric" "Aatrox")
+  (ban 0)
 )
 (campeon
   (nombre "Trundle")
@@ -1327,6 +1420,7 @@
   (ga "Lee Sin" "Dr. Mundo" "Nasus" "Rammus" "Renekton" "Yorick" "Riven" "Udyr" "Jax" "Shyvana")
   (ba "Sona" "Teemo" "Jax" "Pantheon" "Kennen" "Ahri" "Aatrox" "Heimerdinger" "Garen" "Jayce")
   (gw "Lissandra" "Anivia" "Vayne" "Aatrox" "Blitzcrank" "Jarvan IV" "Nidalee" "Yasuo" "Darius" "Nunu")
+  (ban 0)
 )
 (campeon
   (nombre "Tryndamere")
@@ -1341,6 +1435,7 @@
   (ga "Yasuo" "Aatrox" "Zed" "Master Yi" "Kha'Zix" "Renekton" "Darius" "Aatrox" "Riven" "Irelia")
   (ba "Teemo" "Rammus" "Jax" "Pantheon" "Malphite" "Renekton" "Aatrox" "Darius" "Lee Sin" "Riven")
   (gw "Ashe" "Aatrox" "Zilean" "Kayle" "Amumu" "Nunu" "Jax" "Blitzcrank" "Yorick" "Morgana")
+  (ban 0)
 )
 (campeon
   (nombre "Twisted Fate")
@@ -1355,6 +1450,7 @@
   (ga "Ryze" "Lissandra" "Evelynn" "Evelynn" "Karthus" "Aatrox" "Karthus" "Katarina" "Teemo" "Fiddlesticks")
   (ba "Fizz" "Diana" "Nocturne" "LeBlanc" "Kassadin" "Yasuo" "Ahri" "Talon" "Yasuo" "Zed")
   (gw "Nocturne" "Shen" "Gangplank" "Aatrox" "Ashe" "Taric" "Rammus" "Pantheon" "Caitlyn" "Blitzcrank")
+  (ban 0)
 )
 (campeon
   (nombre "Twitch")
@@ -1369,6 +1465,7 @@
   (ga "Ezreal" "Vayne" "Sivir" "Vayne" "Ashe" "Jinx" "Tristana" "Lucian" "Jinx" "Quinn")
   (ba "Lee Sin" "Corki" "Sona" "Caitlyn" "Draven" "Quinn" "Jinx" "Varus" "Miss Fortune" "Lulu")
   (gw "Lulu" "Nami" "Janna" "Taric" "Teemo" "Sona" "Blitzcrank" "Shen" "Leona" "Alistar")
+  (ban 0)
 )
 (campeon
   (nombre "Udyr")
@@ -1383,6 +1480,7 @@
   (ga "Lee Sin" "Lee Sin" "Irelia" "Pantheon" "Gangplank" "Yasuo" "Galio" "Riven" "Nasus" "Aatrox")
   (ba "Ashe" "Teemo" "Trundle" "Kayle" "Jax" "Elise" "Vladimir" "Janna" "Garen" "Aatrox")
   (gw "LeBlanc" "Janna" "Ryze" "Aatrox" "Amumu" "Ahri" "Blitzcrank" "Evelynn" "Lee Sin" "Orianna")
+  (ban 0)
 )
 (campeon
   (nombre "Urgot")
@@ -1397,6 +1495,7 @@
   (ga "Graves" "Ashe" "Vayne" "Draven" "Jinx" "Teemo" "Corki" "Ezreal" "Varus" "Darius")
   (ba "Soraka" "Sivir" "Yasuo" "Nami" "Thresh" "Caitlyn" "Alistar" "Ahri" "Alistar" "Trundle")
   (gw "Soraka" "Taric" "Alistar" "Nunu" "Lulu" "Leona" "Thresh" "Sona" "Blitzcrank" "Janna")
+  (ban 0)
 )
 (campeon
   (nombre "Varus")
@@ -1411,6 +1510,7 @@
   (ga "Draven" "Jinx" "Caitlyn" "Vayne" "Aatrox" "Quinn" "Ezreal" "Ashe" "Miss Fortune" "Ezreal")
   (ba "Graves" "Lucian" "Sivir" "Tristana" "Blitzcrank" "Leona" "Lucian" "Aatrox" "Teemo" "Thresh")
   (gw "Janna" "Nami" "Blitzcrank" "Lulu" "Thresh" "Alistar" "Leona" "Taric" "Sona" "Zyra")
+  (ban 0)
 )
 (campeon
   (nombre "Vayne")
@@ -1425,6 +1525,7 @@
   (ga "Lucian" "Renekton" "Cho'Gath" "Sivir" "Lucian" "Jinx" "Singed" "Nasus" "Aatrox" "Ezreal")
   (ba "Caitlyn" "Quinn" "Draven" "Graves" "Tristana" "Corki" "Jinx" "Varus" "Aatrox" "Twitch")
   (gw "Sona" "Nami" "Thresh" "Lulu" "Janna" "Nunu" "Leona" "Soraka" "Ahri" "Blitzcrank")
+  (ban 0)
 )
 (campeon
   (nombre "Veigar")
@@ -1439,6 +1540,7 @@
   (ga "Karthus" "Twisted Fate" "Ahri" "Ziggs" "Nidalee" "Vel'Koz" "LeBlanc" "Karma" "Teemo" "Akali")
   (ba "Fizz" "Talon" "Ryze" "Zed" "Kassadin" "Yasuo" "Galio" "LeBlanc" "Diana" "Morgana")
   (gw "Warwick" "Amumu" "Maokai" "Lux" "LeBlanc" "Cho'Gath" "Aatrox" "Ahri" "Blitzcrank" "Katarina")
+  (ban 0)
 )
 (campeon
   (nombre "Vel'Koz")
@@ -1453,6 +1555,7 @@
   (ga "Heimerdinger" "Teemo" "Twisted Fate" "Ryze" "Gragas" "Swain" "Karthus" "Aatrox" "Lux" "Gragas")
   (ba "Yasuo" "LeBlanc" "Fizz" "Talon" "Zed" "Akali" "Ahri" "Diana" "Syndra" "Katarina")
   (gw "Amumu" "Leona" "Yasuo" "Jarvan IV" "Galio" "Lux" "Annie" "Sejuani" "Wukong" "Ahri")
+  (ban 0)
 )
 (campeon
   (nombre "Vi")
@@ -1467,6 +1570,7 @@
   (ga "Zac" "Katarina" "Jarvan IV" "Shyvana" "Yasuo" "Malphite" "Nasus" "Shaco" "Jayce" "Rammus")
   (ba "Jax" "Lee Sin" "Riven" "Darius" "Teemo" "Pantheon" "Karma" "Aatrox" "Renekton" "Xin Zhao")
   (gw "Yasuo" "Caitlyn" "Orianna" "Riven" "Fizz" "Blitzcrank" "Jayce" "Zed" "Ahri" "Jinx")
+  (ban 0)
 )
 (campeon
   (nombre "Viktor")
@@ -1481,6 +1585,7 @@
   (ga "Swain" "Katarina" "Rumble" "Ryze" "Fizz" "Karthus" "Yasuo" "Ahri" "Akali" "Lux")
   (ba "Syndra" "LeBlanc" "Talon" "Fizz" "Ahri" "Gragas" "Zed" "Lux" "Kassadin" "Tristana")
   (gw "Jarvan IV" "Amumu" "Sona" "Leona" "Aatrox" "Zilean" "Cho'Gath" "Akali" "Diana" "Malzahar")
+  (ban 0)
 )
 (campeon
   (nombre "Vladimir")
@@ -1495,6 +1600,7 @@
   (ga "Yasuo" "Singed" "Shen" "Nasus" "Fizz" "Zed" "Zed" "Morgana" "Zac" "Kassadin")
   (ba "Swain" "Fiddlesticks" "Malzahar" "Riven" "Xin Zhao" "Yorick" "Irelia" "Aatrox" "Kayle" "Pantheon")
   (gw "Jarvan IV" "Lulu" "Kennen" "Aatrox" "Amumu" "Galio" "Orianna" "Zed" "Brand" "Karthus")
+  (ban 0)
 )
 (campeon
   (nombre "Volibear")
@@ -1509,6 +1615,7 @@
   (ga "Nasus" "Renekton" "Olaf" "Jax" "Riven" "Wukong" "Xin Zhao" "Irelia" "Tryndamere" "Aatrox")
   (ba "Teemo" "Kayle" "Jayce" "Kennen" "Elise" "Aatrox" "Vayne" "Renekton" "Pantheon" "Darius")
   (gw "Yasuo" "Draven" "Caitlyn" "Varus" "Ashe" "Aatrox" "Darius" "Jinx" "Quinn" "Ezreal")
+  (ban 0)
 )
 (campeon
   (nombre "Warwick")
@@ -1523,6 +1630,7 @@
   (ga "Cho'Gath" "Shen" "Dr. Mundo" "Singed" "Renekton" "Malphite" "Aatrox" "Nasus" "Riven" "Jax")
   (ba "Yorick" "Kayle" "Olaf" "Udyr" "Jax" "Lee Sin" "Renekton" "Rengar" "Nasus" "Teemo")
   (gw "Malzahar" "Katarina" "Caitlyn" "Lee Sin" "Lux" "Veigar" "Aatrox" "Jax" "Fizz" "Ahri")
+  (ban 0)
 )
 (campeon
   (nombre "Wukong")
@@ -1537,6 +1645,7 @@
   (ga "Zed" "Aatrox" "Jax" "Teemo" "Elise" "Yasuo" "Jayce" "Nasus" "Master Yi" "Kha'Zix")
   (ba "Lee Sin" "Darius" "Garen" "Olaf" "Renekton" "Pantheon" "Soraka" "Shyvana" "Aatrox" "Volibear")
   (gw "Yasuo" "Lulu" "Jarvan IV" "Katarina" "Orianna" "Soraka" "Aatrox" "Galio" "Amumu" "Sejuani")
+  (ban 0)
 )
 (campeon
   (nombre "Xerath")
@@ -1551,6 +1660,7 @@
   (ga "Ryze" "Vel'Koz" "Yasuo" "Heimerdinger" "Karthus" "Vel'Koz" "Orianna" "Yasuo" "Annie" "Lissandra")
   (ba "Ahri" "Fizz" "LeBlanc" "Gragas" "Kassadin" "Zed" "Syndra" "Yasuo" "Ziggs" "Diana")
   (gw "Amumu" "Jarvan IV" "Varus" "Aatrox" "Leona" "Rammus" "Quinn" "Akali" "Evelynn" "Skarner")
+  (ban 0)
 )
 (campeon
   (nombre "Xin Zhao")
@@ -1565,6 +1675,7 @@
   (ga "Yasuo" "Vladimir" "Aatrox" "Nasus" "Aatrox" "Darius" "Zed" "Yasuo" "Rumble" "Riven")
   (ba "Jax" "Malphite" "Pantheon" "Volibear" "Malphite" "Fiora" "Teemo" "Riven" "Renekton" "Nasus")
   (gw "Yasuo" "Aatrox" "Darius" "Jax" "Blitzcrank" "Jarvan IV" "Pantheon" "Teemo" "Kha'Zix" "Volibear")
+  (ban 0)
 )
 (campeon
   (nombre "Yasuo")
@@ -1579,6 +1690,7 @@
   (ga "Vel'Koz" "Nidalee" "Lux" "Gragas" "Caitlyn" "Ziggs" "Kassadin" "Aatrox" "Gragas" "Veigar")
   (ba "Jax" "Fiora" "Kayle" "Ryze" "Darius" "Swain" "Akali" "Mordekaiser" "Xin Zhao" "Vladimir")
   (gw "Nami" "Blitzcrank" "Alistar" "Orianna" "Zyra" "Janna" "Malphite" "Aatrox" "Wukong" "Vi")
+  (ban 0)
 )
 (campeon
   (nombre "Yorick")
@@ -1593,6 +1705,7 @@
   (ga "Teemo" "Darius" "Shen" "Jayce" "Rumble" "Kha'Zix" "Malphite" "Jarvan IV" "Olaf" "Kennen")
   (ba "Cho'Gath" "Nunu" "Trundle" "Xin Zhao" "Aatrox" "Aatrox" "Renekton" "Jax" "Renekton" "Wukong")
   (gw "Mordekaiser" "Aatrox" "Vayne" "Cassiopeia" "Ahri" "Karthus" "Zilean" "Tryndamere" "Shaco" "Kog'Maw")
+  (ban 0)
 )
 (campeon
   (nombre "Zac")
@@ -1607,6 +1720,7 @@
   (ga "Katarina" "Jax" "Singed" "Malphite" "Nasus" "Renekton" "Soraka" "Riven" "Shen" "Darius")
   (ba "Vi" "Zilean" "Vladimir" "Renekton" "Fizz" "Yorick" "Riven" "Cho'Gath" "Renekton" "Vayne")
   (gw "Yasuo" "Orianna" "Aatrox" "Lulu" "Syndra" "Malphite" "Wukong" "Jarvan IV" "Ahri" "Shen")
+  (ban 0)
 )
 (campeon
   (nombre "Zed")
@@ -1621,6 +1735,7 @@
   (ga "Vel'Koz" "Heimerdinger" "Yasuo" "Veigar" "Yasuo" "Nidalee" "Kassadin" "Aatrox" "Teemo" "Karthus")
   (ba "Kayle" "Kayle" "Wukong" "Singed" "Lissandra" "Irelia" "Jax" "Talon" "LeBlanc" "Kayle")
   (gw "Talon" "Kha'Zix" "Shen" "Ahri" "Aatrox" "Amumu" "Vi" "Kayle" "Nasus" "Vladimir")
+  (ban 0)
 )
 (campeon
   (nombre "Ziggs")
@@ -1635,6 +1750,7 @@
   (ga "Ryze" "Heimerdinger" "Karthus" "Vel'Koz" "Zed" "Brand" "Lux" "Twisted Fate" "Ahri" "Akali")
   (ba "LeBlanc" "Yasuo" "Talon" "Syndra" "Aatrox" "Yasuo" "Kassadin" "Akali" "Zed" "Kha'Zix")
   (gw "Amumu" "Jarvan IV" "Aatrox" "Leona" "Sejuani" "Malphite" "Yasuo" "Lux" "Rengar" "Galio")
+  (ban 0)
 )
 (campeon
   (nombre "Zilean")
@@ -1649,6 +1765,7 @@
   (ga "Zac" "Darius" "Yasuo" "Katarina" "Aatrox" "Zed" "Fizz" "Ryze" "Akali" "Ahri")
   (ba "Morgana" "Karma" "Soraka" "Ashe" "Galio" "Kha'Zix" "Kassadin" "Cho'Gath" "Fizz" "Pantheon")
   (gw "Aatrox" "Vayne" "Draven" "Ezreal" "Tryndamere" "Hecarim" "Twitch" "Syndra" "Caitlyn" "Volibear")
+  (ban 0)
 )
 (campeon
   (nombre "Zyra")
@@ -1663,6 +1780,7 @@
   (ga "Mordekaiser" "Ryze" "Thresh" "Karthus" "Leona" "Teemo" "Annie" "Twisted Fate" "Ahri" "Evelynn")
   (ba "Fizz" "Diana" "Katarina" "LeBlanc" "Akali" "Talon" "Kassadin" "Ahri" "Syndra" "Ahri")
   (gw "Yasuo" "Jinx" "Vayne" "Caitlyn" "Ashe" "Corki" "Varus" "Draven" "Amumu" "Miss Fortune")
+  (ban 0)
 )
 (tiene-rols "Aatrox" "Fighter" "Tank")
 (tiene-rols "Ahri" "Mage" "Assassin")

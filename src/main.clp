@@ -1,5 +1,6 @@
 (deftemplate campeon
 	(slot nombre (type STRING))
+	(multislot tiene-rols)
 	(slot salud (type INTEGER))
 	(slot ataque (type INTEGER))
 	(slot hechizo (type INTEGER))
@@ -8,17 +9,19 @@
 	(slot puntosip (type INTEGER))
 	(slot puntosrp (type INTEGER))
 	(slot prioridad (type INTEGER))
+	(slot ban (type INTEGER))
 )
 (defglobal ?*equipo* = 0)
 (defglobal ?*player* = 0)
-;(defrule efectuar-ban
-;	(declare (salience 200))
-;	(ban ?ban)
-;	?b1 <- (campeon (nombre ?ban)(ban 0))
-;=>
-;	(modify ?b1 (ban 1))
-	;(printout t "efectuando ban: " ?ban crlf)
-;)
+
+(defrule trato-ban
+(declare (salience 201))
+  ?b <- (ban ?campeon)
+  ?p <- (campeon (nombre ?campeon) (ban 0))
+=>
+  (modify ?p (ban 1))
+  (retract ?b)
+)
 (defrule ingreso-informacion1
 (declare (salience 201))
    (initial-fact)
@@ -54,9 +57,11 @@
 	(bind ?*equipo* (readline))
 
 	(printout t crlf "Ingrese el # de jugador (1 - 6) del equipo " ?*equipo* ": ")
-	(bind ?*player* (readline))
-	(assert (ingreso 1))
+	(bind ?*player* (read))
+	
 	(printout t crlf)
+	(assert (jugador 1 "a")) ; proximo jugador que elije
+	(printout t crlf "Recomendaciones:" crlf)
 )
 (defrule inicio
 (declare (salience 202))
