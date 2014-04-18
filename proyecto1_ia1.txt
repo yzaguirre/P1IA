@@ -10,10 +10,15 @@ $1\t\t(prioridad 0)\n
 
 support
 https://code.google.com/p/kbs-ia/source/browse/trunk/?r=65#trunk%2Fsrc
+x http://cs.canisius.edu/ONLINESTUFF/PL_TUTORIALS/CLIPS/tutorial
+http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node5.4.1.3.html
+http://www.cs.odu.edu/~mukka/cs480f09/Lecturenotes/Expertsystems/clips/tutorial/
 
 multi-field variable
 $?<symbol>	can bind multi-field value
 $?			matches any multi-field value
+
+(data ?z&:(> ?z ?*z*))
 
 git recover deleted tar
 https://stackoverflow.com/questions/953481/restore-a-deleted-file-in-a-git-repo
@@ -43,3 +48,13 @@ MODIFICACION EN .clp
 MODIFICACION 2
 
 hecho por unwrap 3.5, 4 y 5
+
+MODIFICACION 3 de roles
+\(tiene-rols (.+) (.+) (.+)\)\n
+(tiene-rol $1 $2)\n(tiene-rol $1 $3)\n
+
+\(primario (.+)\)\n.+(".+")\)\n
+(tiene-rols $1 $2)\n
+
+^\)
+  (ban 0)\n)

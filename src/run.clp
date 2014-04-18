@@ -17,6 +17,7 @@
 (defglobal ?*op3* = 0)
 (defglobal ?*equipo* = 0)
 (defglobal ?*player* = 0)
+(defglobal ?*candidatos* = 0)
 ;(defrule le-fue-bien
 ;	(salience 187)
 ;	(comolefue 1)
@@ -96,6 +97,9 @@
   (declare (salience 199)); mas alto que los ingreso-#equipo
   (con-posicion ?jugador ?equipo ?pos)
 =>
+  (printout t crlf "Top 3 Campeones Recomendados:" crlf)
+  (printout t (implode$ (subseq$ ?*candidatos* 2 4)) crlf)
+  (bind ?*candidatos* "") ; limpiar la lista
   (printout t "Ingrese nombre del campeon: ")
   (bind ?campeon (readline))
   (assert (juega-con ?jugador ?equipo ?campeon))
@@ -110,20 +114,19 @@
     (nombre ?campeon
       ;&:(not (member ?campeon $?*bans*))
       ;&:()
-      ;&:()
     )
-    ;(tiene-rols $?roles
     (tiene-rols ?r1 ?r2
       &:(or (member ?r1 $?rols)(member ?r2 $?rols))
     )
+    (prioridad ?prioridad)
     (ban 0)
   )
   ;(juega-con ? ?&~?nombre)
   ;(order by prioridad)
-  ;(top tres)
 =>
-  (printout t crlf "== " ?jugador " == " ?posicion " == " $?rols " == " ?r1 " == " ?r2 " ==" ?campeon crlf crlf)
-  ;(juega-con ?j ?nombre)
+  (bind ?*candidatos* ?*candidatos* ?campeon)
+  ;(printout t crlf "Campeon: " ?campeon " == Atributo primario: " ?r1 " == Atributo Secundario: " ?r2 " == Prioridad: " ?prioridad crlf)
+  ;(printout t crlf "== " ?jugador " == " ?posicion " == " $?rols " == " ?r1 " == " ?r2 " ==" ?campeon crlf crlf)
 )
 (defrule ingreso-5m
   (declare (salience 190))
@@ -134,7 +137,6 @@
     "Jugador 5 de Equipo Morado, Elija su posicion: ")
   (bind ?pos (read))
   (assert(con-posicion 5 "m" ?pos))
-  (printout t crlf "Recomendaciones:" crlf)
   ;(assert (jugador 5 "m")) ; proximo jugador que elije
 )
 (defrule ingreso-5a
@@ -147,7 +149,6 @@
   (bind ?pos (read))
   (assert(con-posicion 5 "a" ?pos))
   (assert (jugador 5 "m")) ; proximo jugador que elije
-  (printout t crlf "Recomendaciones:" crlf)
 )
 (defrule ingreso-4a
   (declare (salience 190))
@@ -159,7 +160,6 @@
   (bind ?pos (read))
   (assert(con-posicion 4 "a" ?pos))
   (assert (jugador 5 "a")) ; proximo jugador que elije
-  (printout t crlf "Recomendaciones:" crlf)
 )
 (defrule ingreso-4m
   (declare (salience 190))
@@ -171,7 +171,6 @@
   (bind ?pos (read))
   (assert(con-posicion 4 "m" ?pos))
   (assert (jugador 4 "a")) ; proximo jugador que elije
-  (printout t crlf "Recomendaciones:" crlf)
 )
 (defrule ingreso-3m
   (declare (salience 190))
@@ -183,7 +182,6 @@
   (bind ?pos (read))
   (assert(con-posicion 3 "m" ?pos))
   (assert (jugador 4 "m")) ; proximo jugador que elije
-  (printout t crlf "Recomendaciones:" crlf)
 )
 (defrule ingreso-3a
   (declare (salience 190))
@@ -195,7 +193,6 @@
   (bind ?pos (read))
   (assert(con-posicion 3 "a" ?pos))
   (assert (jugador 3 "m")) ; proximo jugador que elije
-  (printout t crlf "Recomendaciones:" crlf)
 )
 (defrule ingreso-2a
   (declare (salience 190))
@@ -207,7 +204,6 @@
   (bind ?pos (read))
   (assert(con-posicion 2 "a" ?pos))
   (assert (jugador 3 "a")) ; proximo jugador que elije
-  (printout t crlf "Recomendaciones:" crlf)
 )
 (defrule ingreso-2m
   (declare (salience 190))
@@ -219,7 +215,6 @@
   (bind ?pos (read))
   (assert(con-posicion 2 "m" ?pos))
   (assert (jugador 2 "a")) ; proximo jugador que elije
-  (printout t crlf "Recomendaciones:" crlf)
 )
 (defrule ingreso-1m
   (declare (salience 190))
@@ -231,7 +226,6 @@
   (bind ?pos (read))
   (assert(con-posicion 1 "m" ?pos))
   (assert (jugador 2 "m")) ; proximo jugador que elije
-  (printout t crlf "Recomendaciones:" crlf)
 )
 (defrule ingreso-1a
   (declare (salience 190))
@@ -243,9 +237,7 @@
   (bind ?pos (read))
   (assert (jugador 1 "m")) ; proximo jugador que elije
   (assert(con-posicion 1 "a" ?pos))
-  (printout t crlf "Recomendaciones:" crlf)
 )
-
 (defrule trato-ban
 (declare (salience 201))
   ?b <- (ban ?campeon)
@@ -275,7 +267,6 @@
 	(bind ?*player* 1)
 	(printout t crlf)
   (assert (jugador 1 "a")) ; proximo jugador que elije
-  (printout t crlf "Recomendaciones:" crlf)
 )
 (defrule inicio
 (declare (salience 202))
