@@ -11,6 +11,12 @@
 	(slot prioridad (type INTEGER))
   (slot ban (type INTEGER))
 )
+(deftemplate prioridad
+  (slot tipo (type STRING))
+  (slot champ1 (type STRING))
+  (slot champ2 (type STRING))
+  (slot flag (type INTEGER))
+)
 ; Aatrox
 (defglobal ?*op1* = 0)
 (defglobal ?*op2* = 0)
@@ -40,35 +46,6 @@
 ;	(printout t "Le fue bien? si o no: ")
 ;	(assert (comolefue =(readline)))
 ;)
-
-;(defrule analisis-ingreso-jugador
-;	(declare (salience 187))
-;	?p <- (juega-con ?jA ?campeon)
-;	(juega-con ?jX ?campeon)
-;=>
-	;(printout t "Campeon " ?campeon " ya pertenece a jugador " ?jX)
-;)
-;(defrule ingreso-jugador1a
-;(declare (salience 200))
-	;(initial-fact)
-;
-	;(not (juega-con ?* ?*op1*))
-;
-;	(not (juega-con ?* ?*op2*))
-;
-;	(not (juega-con ?* ?*op3*))
-;=>
-;	(printout t "Jugador 1 equipo azul, estas son tus 3 recomendaciones de campeon: " crlf)
-;	()
-	;(bind ?campeon (readline))
-	;(assert (juega-con "1a" ?campeon))
-;)
-;analisar rol
-;no banneado (ban ?campeon)
-;no elegido (juega-con ?x ?campeon)
-;ordenarlos segun prioridad
-;top 3
-;assert juega-con j1a campeon
 ; ORDEN DE ELECCION
 ; 1a
 ; 1m
@@ -87,13 +64,39 @@
 ;  (5)
 ;  )
 ; -1 - 5
-;(defrule prioridad-gw
-  ;(juega-con ?j ?nombre)
-  ;?f1 <- (campeon (nombre ?nombre) (gw $?gw))
-  ;(juega-con ? $?gw )
-;=>
-  ;(modify ?f1 (+ prioridad 1))
-;)
+(defrule prioridad-gw
+  (declare (salience 198)); mas alto que los ingreso-#equipo
+  (juega-con ?jugador ?equipo ?campeon)
+  ?f0 <- (prioridad (tipo "gw") (champ1 ?campeon) (champ2 ?gw) (flag 0))
+  (juega-con ?jug&~?jugador ?equipo ?gw) ; existe el gw en su equipo
+  ?f1 <- (campeon (nombre ?campeon) (prioridad ?prioridad))
+=>
+  (modify ?f0 (flag 1))
+  (modify ?f1 (prioridad (+ ?prioridad 1)))
+  (printout t "Subiendo prioridad a " ?campeon " de jugador " ?jugador " y equipo " ?equipo " porque es gw con " ?gw crlf)
+)
+(defrule prioridad-ga
+  (declare (salience 198)); mas alto que los ingreso-#equipo
+  (juega-con ?jugador ?equipo ?campeon)
+  ?f0 <- (prioridad (tipo "ga") (champ1 ?campeon) (champ2 ?ga) (flag 0))
+  (juega-con ?jug ?equi&~?equipo ?ga) ; no existe el ga en su equipo
+  ?f1 <- (campeon (nombre ?campeon) (prioridad ?prioridad))
+=>
+  (modify ?f0 (flag 1))
+  (modify ?f1 (prioridad (+ ?prioridad 1)))
+  (printout t "Subiendo prioridad a " ?campeon " de jugador " ?jugador " y equipo " ?equipo " porque es ga con " ?ga crlf)
+)
+(defrule prioridad-ba
+  (declare (salience 198)); mas alto que los ingreso-#equipo
+  (juega-con ?jugador ?equipo ?campeon)
+  ?f0 <- (prioridad (tipo "ba") (champ1 ?campeon) (champ2 ?ba) (flag 0))
+  (juega-con ?jug ?equi&~?equipo ?ba) ; no existe el ba en su equipo
+  ?f1 <- (campeon (nombre ?campeon) (prioridad ?prioridad))
+=>
+  (modify ?f0 (flag 1))
+  (modify ?f1 (prioridad (+ ?prioridad 1)))
+  (printout t "Restando prioridad a " ?campeon " de jugador " ?jugador " y equipo " ?equipo " porque es ba con " ?ba crlf)
+)
 (defrule ingreso-campeon-fase2
   (declare (salience 199)); mas alto que los ingreso-#equipo
   (con-posicion ?jugador ?equipo ?pos)
