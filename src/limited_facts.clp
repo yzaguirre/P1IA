@@ -19,7 +19,7 @@
   (fecha "2013-06-13")
   (puntosip 6300)
   (puntosrp 975)
-  (prioridad 100)
+  (prioridad 90)
   (ban 0)
 )
 (campeon
@@ -32,7 +32,7 @@
   (fecha "2011-12-14")
   (puntosip 6300)
   (puntosrp 975)
-  (prioridad 100)
+  (prioridad 110)
   (ban 0)
 )
 (campeon
@@ -227,7 +227,7 @@
   (fecha "2009-09-02")
   (puntosip 1350)
   (puntosrp 585)
-  (prioridad 100)
+  (prioridad 120)
   (ban 0)
 )
 (campeon

@@ -18,6 +18,7 @@
 (defglobal ?*equipo* = 0)
 (defglobal ?*player* = 0)
 (defglobal ?*candidatos* = 0)
+(defglobal ?*prioridades* = 0)
 ;(defrule le-fue-bien
 ;	(salience 187)
 ;	(comolefue 1)
@@ -98,8 +99,9 @@
   (con-posicion ?jugador ?equipo ?pos)
 =>
   (printout t crlf "Top 3 Campeones Recomendados:" crlf)
-  (printout t (implode$ (subseq$ ?*candidatos* 2 4)) crlf)
-  (bind ?*candidatos* "") ; limpiar la lista
+  (printout t (implode$ (subseq$ ?*candidatos* 1 3)) crlf)
+  (bind ?*candidatos* 0) ; limpiar la lista
+  (bind ?*prioridades* 0) ; limpiar la lista
   (printout t "Ingrese nombre del campeon: ")
   (bind ?campeon (readline))
   (assert (juega-con ?jugador ?equipo ?campeon))
@@ -122,11 +124,36 @@
     (ban 0)
   )
   ;(juega-con ? ?&~?nombre)
-  ;(order by prioridad)
 =>
-  (bind ?*candidatos* ?*candidatos* ?campeon)
-  ;(printout t crlf "Campeon: " ?campeon " == Atributo primario: " ?r1 " == Atributo Secundario: " ?r2 " == Prioridad: " ?prioridad crlf)
-  ;(printout t crlf "== " ?jugador " == " ?posicion " == " $?rols " == " ?r1 " == " ?r2 " ==" ?campeon crlf crlf)
+  (if (integerp ?*candidatos*)
+    then
+      (bind ?*candidatos* ?*candidatos* ?campeon)
+      (bind ?*prioridades* ?*prioridades* ?prioridad)
+      (bind ?*candidatos*   (delete$ ?*candidatos*  1 1))
+      (bind ?*prioridades*  (delete$ ?*prioridades* 1 1))
+      ;(printout t "ELIMINANDO" crlf)
+    else ; ingrese ordenado segun prioridad
+      (bind ?length (length$ ?*candidatos*))
+      (bind ?nswapped True)
+      (loop-for-count (?x 1 ?length)
+          (bind ?prioridadLista (nth$ ?x ?*prioridades*))
+          (if (>= ?prioridad ?prioridadLista)
+            then
+              ; make the swap happen :)
+              (bind ?*candidatos* (insert$ ?*candidatos* ?x ?campeon))
+              (bind ?*prioridades* (insert$ ?*prioridades* ?x ?prioridad))
+              (bind ?nswapped False)
+              ;(printout t "ROMPIENDO" crlf)
+              (break)
+          )
+      )
+      (if (eq ?nswapped True)
+        then ; anadir al final de la lista
+          (bind ?*candidatos* ?*candidatos* ?campeon)
+          (bind ?*prioridades* ?*prioridades* ?prioridad)
+      )
+  )
+  ;(printout t crlf "== " ?jugador " == " ?posicion " == " $?rols " == " ?r1 " == " ?r2 " == " ?campeon " == prioridad " ?prioridad  crlf crlf)
 )
 (defrule ingreso-5m
   (declare (salience 190))

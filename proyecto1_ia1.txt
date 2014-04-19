@@ -13,6 +13,7 @@ https://code.google.com/p/kbs-ia/source/browse/trunk/?r=65#trunk%2Fsrc
 x http://cs.canisius.edu/ONLINESTUFF/PL_TUTORIALS/CLIPS/tutorial
 http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node5.4.1.3.html
 http://www.cs.odu.edu/~mukka/cs480f09/Lecturenotes/Expertsystems/clips/tutorial/
+if else http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node12.6.2.html
 
 multi-field variable
 $?<symbol>	can bind multi-field value
