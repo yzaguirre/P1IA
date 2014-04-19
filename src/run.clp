@@ -43,13 +43,19 @@
 ;=>
 ;	(modify ?p (- prioridad 1))
 ;)
-;(defrule como-le-fue
-;(declare salience 186)
-;	(initial-fact)
-;=>
-;	(printout t "Le fue bien? si o no: ")
-;	(assert (comolefue =(readline)))
-;)
+(defrule como-le-fue
+(declare (salience 186))
+  (juega-con ?player ?equipo ?campeon)
+  (test (and (eq ?player ?*player*) (eq ?equipo ?*equipo*)))
+  ?p <- (campeon (nombre ?campeon) (prioridad ?prioridad) (ban 1))
+=>
+	(printout t "Ud. es el jugador #" ?*player* " del equipo " ?*equipo* ". " crlf "Con prioridad igual a " ?prioridad ", le fue bien a tu campeon \"" ?campeon "\" ? si o no: ")
+	(bind ?comolefue (readline))
+  (if (eq ?comolefue "si")
+    then (modify ?p (prioridad (+ ?prioridad 1))(ban 2)) (printout t "nueva prioridad + " (+ ?prioridad 1) crlf)
+    else (modify ?p (prioridad (- ?prioridad 1))(ban 2)) (printout t "nueva prioridad - " (- ?prioridad 1) crlf)
+  )
+)
 ; ORDEN DE ELECCION
 ; 1a
 ; 1m
@@ -61,7 +67,6 @@
 ; 4a
 ; 5a
 ; 5m
-
 (defrule prioridad-gw
   (declare (salience 198)); mas alto que los ingreso-#equipo
   (juega-con ?jugador ?equipo ?campeon)
@@ -135,7 +140,6 @@
     (ba $?allba)
     (ban 0)
   )
-  ;(juega-con ? ?&~?nombre)
 =>
   (if (integerp ?*candidatos*)
     then
@@ -330,7 +334,7 @@
   (assert (ban "Jinx"))
 
 	(printout t crlf "Ingrese equipo a pertener, Azul o Morado: ")
-	(bind ?*equipo* Azul)
+	(bind ?*equipo* "a")
 
 	(printout t crlf "Ingrese el # de jugador (1 - 6) del equipo " ?*equipo* ": ")
 	(bind ?*player* 1)
