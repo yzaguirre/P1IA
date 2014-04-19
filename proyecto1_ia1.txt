@@ -65,3 +65,11 @@ MODIFICACION 3 de roles
 
 \((\w\w) (\".+\") (\".+\")\)
 (prioridad (tipo "$1")(champ1 $2)(champ2 $3)(flag 0))
+
+A carga_facts.clp de temp
+
+\(primario (.+)\)\n.+(".+")\)\n
+(tiene-rols $1 $2)\n
+
+^\)
+  (ban 0)\n)

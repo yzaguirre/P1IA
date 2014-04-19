@@ -9,6 +9,9 @@
 	(slot puntosip (type INTEGER))
 	(slot puntosrp (type INTEGER))
 	(slot prioridad (type INTEGER))
+  (multislot ga)
+  (multislot ba)
+  (multislot gw)
   (slot ban (type INTEGER))
 )
 (deftemplate prioridad
@@ -18,13 +21,14 @@
   (slot flag (type INTEGER))
 )
 ; Aatrox
-(defglobal ?*op1* = 0)
-(defglobal ?*op2* = 0)
-(defglobal ?*op3* = 0)
-(defglobal ?*equipo* = 0)
-(defglobal ?*player* = 0)
-(defglobal ?*candidatos* = 0)
-(defglobal ?*prioridades* = 0)
+(defglobal ?*equipo* = 0) ; equipo que pertenece el jugador de abajo que representa al usuario
+(defglobal ?*player* = 0) ; eleccion de # jugador que representa al usuario
+(defglobal ?*candidatos* = 0) ; lista de candidatos ordenado segun prioridad de la lista de abajo
+(defglobal ?*prioridades* = 0) ; lista de prioridades de campeones de arriba en orden descendente
+
+(defglobal ?*campeones* = 0) ; lista de jugadores elegidos ordenado segun reglas de elección de campeon
+(defglobal ?*equipos* = 0) ; equipo que pertenece el jugador que elegio el campeon en la lista de arriba
+
 ;(defrule le-fue-bien
 ;	(salience 187)
 ;	(comolefue 1)
@@ -58,12 +62,6 @@
 ; 5a
 ; 5m
 
-;(
-;  (4)
-;  (Pida su jugador)
-;  (5)
-;  )
-; -1 - 5
 (defrule prioridad-gw
   (declare (salience 198)); mas alto que los ingreso-#equipo
   (juega-con ?jugador ?equipo ?campeon)
@@ -108,6 +106,16 @@
   (printout t "Ingrese nombre del campeon: ")
   (bind ?campeon (readline))
   (assert (juega-con ?jugador ?equipo ?campeon))
+  (if (integerp ?*campeones*)
+    then ; eliminar el campo 0
+      (bind ?*campeones* ?*campeones* ?campeon)
+      (bind ?*equipos* ?*equipos* ?equipo)
+      (bind ?*campeones*   (delete$ ?*campeones*  1 1))
+      (bind ?*equipos*  (delete$ ?*equipos* 1 1))
+    else ; ingreso normal
+      (bind ?*campeones* ?*campeones* ?campeon)
+      (bind ?*equipos* ?*equipos* ?equipo)
+  )
   (assert (ban ?campeon)) ; ya no se podra elegir
   (printout t crlf)
 )
@@ -117,14 +125,14 @@
   (puede-con ?pos $?rols)
 
   (campeon 
-    (nombre ?campeon
-      ;&:(not (member ?campeon $?*bans*))
-      ;&:()
-    )
+    (nombre ?campeon)
     (tiene-rols ?r1 ?r2
       &:(or (member ?r1 $?rols)(member ?r2 $?rols))
     )
     (prioridad ?prioridad)
+    (gw $?allgw)
+    (ga $?allga)
+    (ba $?allba)
     (ban 0)
   )
   ;(juega-con ? ?&~?nombre)
@@ -137,15 +145,46 @@
       (bind ?*prioridades*  (delete$ ?*prioridades* 1 1))
       ;(printout t "ELIMINANDO" crlf)
     else ; ingrese ordenado segun prioridad
+      ; antes, modificar prioridad a causa de campeones elegidos anteriormente
+      (bind ?pri ?prioridad); la prioridad a modificar del candidato
+      (if (not (integerp ?*campeones*)) ; por lo menos ya se ha elegido el primer campeon
+        then
+          (bind ?len (length$ ?*campeones*))
+          (loop-for-count (?a 1 ?len); iterar los campeones ya elegidos (maximo 9)
+            (bind ?chosenChamp (nth$ ?a ?*campeones*)) ; nombre de campeon elegido
+            (bind ?chosenTeam (nth$ ?a ?*equipos*)) ; equipo que elegio el campeon
+            (loop-for-count (?i 1 10); iterar por gw ga ba del campeon candidato
+              (bind ?igw (nth$ ?i $?allgw))
+              (bind ?iga (nth$ ?i $?allga))
+              (bind ?iba (nth$ ?i $?allba))
+              
+              (if (and (eq ?igw ?chosenChamp)(eq ?chosenTeam ?equipo))
+                then (bind ?pri (+ ?pri 1)); sumar prioridad
+                ;(printout t "sumando gw" crlf)
+                else 
+                  (if (and (eq ?iga ?chosenChamp)(neq ?chosenTeam ?equipo))
+                    then (bind ?pri (+ ?pri 1)); sumar prioridad
+                      ;(printout t "sumando ga" crlf)
+                    else 
+                      (if (and (eq ?iba ?chosenChamp)(neq ?chosenTeam ?equipo))
+                        then (bind ?pri (- ?pri 1)); restar prioridad
+                        ;(printout t "sumando ba" crlf)
+                      )
+                  )
+              )
+            )
+          )
+      )
+      ; ahora si, el ingreso ordenado
       (bind ?length (length$ ?*candidatos*))
       (bind ?nswapped True)
       (loop-for-count (?x 1 ?length)
           (bind ?prioridadLista (nth$ ?x ?*prioridades*))
-          (if (>= ?prioridad ?prioridadLista)
+          (if (>= ?pri ?prioridadLista)
             then
               ; make the swap happen :)
               (bind ?*candidatos* (insert$ ?*candidatos* ?x ?campeon))
-              (bind ?*prioridades* (insert$ ?*prioridades* ?x ?prioridad))
+              (bind ?*prioridades* (insert$ ?*prioridades* ?x ?pri))
               (bind ?nswapped False)
               ;(printout t "ROMPIENDO" crlf)
               (break)
@@ -154,7 +193,7 @@
       (if (eq ?nswapped True)
         then ; anadir al final de la lista
           (bind ?*candidatos* ?*candidatos* ?campeon)
-          (bind ?*prioridades* ?*prioridades* ?prioridad)
+          (bind ?*prioridades* ?*prioridades* ?pri)
       )
   )
   ;(printout t crlf "== " ?jugador " == " ?posicion " == " $?rols " == " ?r1 " == " ?r2 " == " ?campeon " == prioridad " ?prioridad  crlf crlf)
@@ -168,7 +207,6 @@
     "Jugador 5 de Equipo Morado, Elija su posicion: ")
   (bind ?pos (read))
   (assert(con-posicion 5 "m" ?pos))
-  ;(assert (jugador 5 "m")) ; proximo jugador que elije
 )
 (defrule ingreso-5a
   (declare (salience 190))
@@ -304,5 +342,5 @@
   (initial-fact)
 =>
   (load-facts limited_facts.clp)
-	(printout t " Exito!!, Se cargaron los datos correctamente" crlf crlf )
+	;(printout t " Exito!!, Se cargaron los datos correctamente" crlf crlf )
 )

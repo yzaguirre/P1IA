@@ -4,16 +4,14 @@
 (tiene-codigo "ADC" 3)
 (tiene-codigo "Support" 4)
 (tiene-codigo "Jungle" 5)
-(puede-con 1 "Fighter")
-(puede-con 1 "Tank")
-(puede-con 1 "Assassin")
+(puede-con 1 "Fighter" "Tank" "Assassin")
 (puede-con 2 "Mage")
 (puede-con 3 "Marksman")
 (puede-con 4 "Support")
-(puede-con 5 "Fighter")
-(puede-con 5 "Assassin")
+(puede-con 5 "Fighter" "Assassin")
 (campeon
   (nombre "Aatrox")
+  (tiene-rols "Fighter" "Tank")
   (salud 4)
   (ataque 8)
   (hechizo 3)
@@ -29,6 +27,7 @@
 )
 (campeon
   (nombre "Ahri")
+  (tiene-rols "Mage" "Assassin")
   (salud 4)
   (ataque 3)
   (hechizo 8)
@@ -44,6 +43,7 @@
 )
 (campeon
   (nombre "Akali")
+  (tiene-rols "Assassin" "N/A")
   (salud 3)
   (ataque 5)
   (hechizo 8)
@@ -59,6 +59,7 @@
 )
 (campeon
   (nombre "Alistar")
+  (tiene-rols "Tank" "N/A")
   (salud 9)
   (ataque 6)
   (hechizo 5)
@@ -74,6 +75,7 @@
 )
 (campeon
   (nombre "Amumu")
+  (tiene-rols "Tank" "Mage")
   (salud 6)
   (ataque 2)
   (hechizo 8)
@@ -89,6 +91,7 @@
 )
 (campeon
   (nombre "Anivia")
+  (tiene-rols "Mage" "Support")
   (salud 4)
   (ataque 1)
   (hechizo 10)
@@ -104,6 +107,7 @@
 )
 (campeon
   (nombre "Annie")
+  (tiene-rols "Mage" "N/A")
   (salud 3)
   (ataque 2)
   (hechizo 10)
@@ -119,6 +123,7 @@
 )
 (campeon
   (nombre "Ashe")
+  (tiene-rols "Marksman" "Support")
   (salud 3)
   (ataque 7)
   (hechizo 2)
@@ -134,6 +139,7 @@
 )
 (campeon
   (nombre "Blitzcrank")
+  (tiene-rols "Tank" "Fighter")
   (salud 8)
   (ataque 4)
   (hechizo 5)
@@ -149,6 +155,7 @@
 )
 (campeon
   (nombre "Brand")
+  (tiene-rols "Mage" "N/A")
   (salud 2)
   (ataque 2)
   (hechizo 9)
@@ -164,6 +171,7 @@
 )
 (campeon
   (nombre "Caitlyn")
+  (tiene-rols "Marksman" "N/A")
   (salud 2)
   (ataque 8)
   (hechizo 2)
@@ -179,6 +187,7 @@
 )
 (campeon
   (nombre "Cassiopeia")
+  (tiene-rols "Mage" "N/A")
   (salud 3)
   (ataque 2)
   (hechizo 9)
@@ -194,6 +203,7 @@
 )
 (campeon
   (nombre "Cho'Gath")
+  (tiene-rols "Tank" "Mage")
   (salud 7)
   (ataque 3)
   (hechizo 7)
@@ -209,6 +219,7 @@
 )
 (campeon
   (nombre "Corki")
+  (tiene-rols "Marksman" "N/A")
   (salud 3)
   (ataque 8)
   (hechizo 6)
@@ -224,6 +235,7 @@
 )
 (campeon
   (nombre "Darius")
+  (tiene-rols "Fighter" "Tank")
   (salud 5)
   (ataque 9)
   (hechizo 1)
@@ -239,6 +251,7 @@
 )
 (campeon
   (nombre "Diana")
+  (tiene-rols "Fighter" "Mage")
   (salud 6)
   (ataque 7)
   (hechizo 8)
@@ -254,6 +267,7 @@
 )
 (campeon
   (nombre "Dr. Mundo")
+  (tiene-rols "Fighter" "Tank")
   (salud 7)
   (ataque 5)
   (hechizo 6)
@@ -269,6 +283,7 @@
 )
 (campeon
   (nombre "Draven")
+  (tiene-rols "Marksman" "N/A")
   (salud 3)
   (ataque 9)
   (hechizo 1)
@@ -284,6 +299,7 @@
 )
 (campeon
   (nombre "Elise")
+  (tiene-rols "Mage" "Fighter")
   (salud 5)
   (ataque 6)
   (hechizo 7)
@@ -299,6 +315,7 @@
 )
 (campeon
   (nombre "Evelynn")
+  (tiene-rols "Assassin" "Mage")
   (salud 2)
   (ataque 4)
   (hechizo 7)
@@ -314,6 +331,7 @@
 )
 (campeon
   (nombre "Ezreal")
+  (tiene-rols "Marksman" "Mage")
   (salud 2)
   (ataque 7)
   (hechizo 6)
@@ -329,6 +347,7 @@
 )
 (campeon
   (nombre "Fiddlesticks")
+  (tiene-rols "Mage" "Support")
   (salud 3)
   (ataque 2)
   (hechizo 9)
@@ -344,6 +363,7 @@
 )
 (campeon
   (nombre "Fiora")
+  (tiene-rols "Fighter" "Assassin")
   (salud 4)
   (ataque 10)
   (hechizo 2)
@@ -359,6 +379,7 @@
 )
 (campeon
   (nombre "Fizz")
+  (tiene-rols "Assassin" "Fighter")
   (salud 4)
   (ataque 6)
   (hechizo 7)
@@ -374,6 +395,7 @@
 )
 (campeon
   (nombre "Galio")
+  (tiene-rols "Tank" "Mage")
   (salud 7)
   (ataque 3)
   (hechizo 6)
@@ -389,6 +411,7 @@
 )
 (campeon
   (nombre "Gangplank")
+  (tiene-rols "Fighter" "Support")
   (salud 6)
   (ataque 7)
   (hechizo 4)
@@ -404,6 +427,7 @@
 )
 (campeon
   (nombre "Garen")
+  (tiene-rols "Fighter" "Tank")
   (salud 7)
   (ataque 7)
   (hechizo 1)
@@ -419,6 +443,7 @@
 )
 (campeon
   (nombre "Gragas")
+  (tiene-rols "Mage" "Fighter")
   (salud 6)
   (ataque 5)
   (hechizo 7)
@@ -434,6 +459,7 @@
 )
 (campeon
   (nombre "Graves")
+  (tiene-rols "Marksman" "N/A")
   (salud 5)
   (ataque 8)
   (hechizo 3)
@@ -449,6 +475,7 @@
 )
 (campeon
   (nombre "Hecarim")
+  (tiene-rols "Fighter" "Tank")
   (salud 6)
   (ataque 8)
   (hechizo 4)
@@ -464,6 +491,7 @@
 )
 (campeon
   (nombre "Heimerdinger")
+  (tiene-rols "Mage" "Support")
   (salud 6)
   (ataque 2)
   (hechizo 8)
@@ -479,6 +507,7 @@
 )
 (campeon
   (nombre "Irelia")
+  (tiene-rols "Fighter" "Assassin")
   (salud 4)
   (ataque 7)
   (hechizo 5)
@@ -494,6 +523,7 @@
 )
 (campeon
   (nombre "Janna")
+  (tiene-rols "Support" "Mage")
   (salud 5)
   (ataque 3)
   (hechizo 7)
@@ -509,6 +539,7 @@
 )
 (campeon
   (nombre "Jarvan IV")
+  (tiene-rols "Tank" "Fighter")
   (salud 8)
   (ataque 6)
   (hechizo 3)
@@ -524,6 +555,7 @@
 )
 (campeon
   (nombre "Jax")
+  (tiene-rols "Fighter" "Assassin")
   (salud 5)
   (ataque 7)
   (hechizo 7)
@@ -539,6 +571,7 @@
 )
 (campeon
   (nombre "Jayce")
+  (tiene-rols "Fighter" "Marksman")
   (salud 4)
   (ataque 8)
   (hechizo 3)
@@ -554,6 +587,7 @@
 )
 (campeon
   (nombre "Jinx")
+  (tiene-rols "Marksman" "N/A")
   (salud 2)
   (ataque 9)
   (hechizo 4)
@@ -569,6 +603,7 @@
 )
 (campeon
   (nombre "Karma")
+  (tiene-rols "Mage" "Support")
   (salud 7)
   (ataque 1)
   (hechizo 8)
@@ -584,6 +619,7 @@
 )
 (campeon
   (nombre "Karthus")
+  (tiene-rols "Mage" "N/A")
   (salud 2)
   (ataque 2)
   (hechizo 10)
@@ -599,6 +635,7 @@
 )
 (campeon
   (nombre "Kassadin")
+  (tiene-rols "Assassin" "Mage")
   (salud 5)
   (ataque 3)
   (hechizo 8)
@@ -614,6 +651,7 @@
 )
 (campeon
   (nombre "Katarina")
+  (tiene-rols "Assassin" "Mage")
   (salud 3)
   (ataque 4)
   (hechizo 9)
@@ -629,6 +667,7 @@
 )
 (campeon
   (nombre "Kayle")
+  (tiene-rols "Fighter" "Support")
   (salud 6)
   (ataque 6)
   (hechizo 7)
@@ -644,6 +683,7 @@
 )
 (campeon
   (nombre "Kennen")
+  (tiene-rols "Mage" "Marksman")
   (salud 4)
   (ataque 6)
   (hechizo 7)
@@ -659,6 +699,7 @@
 )
 (campeon
   (nombre "Kha'Zix")
+  (tiene-rols "Assassin" "N/A")
   (salud 4)
   (ataque 9)
   (hechizo 3)
@@ -674,6 +715,7 @@
 )
 (campeon
   (nombre "Kog'Maw")
+  (tiene-rols "Marksman" "Mage")
   (salud 2)
   (ataque 8)
   (hechizo 5)
@@ -689,6 +731,7 @@
 )
 (campeon
   (nombre "LeBlanc")
+  (tiene-rols "Assassin" "Mage")
   (salud 4)
   (ataque 1)
   (hechizo 10)
@@ -704,6 +747,7 @@
 )
 (campeon
   (nombre "Lee Sin")
+  (tiene-rols "Fighter" "Assassin")
   (salud 5)
   (ataque 8)
   (hechizo 3)
@@ -719,6 +763,7 @@
 )
 (campeon
   (nombre "Leona")
+  (tiene-rols "Tank" "Support")
   (salud 8)
   (ataque 4)
   (hechizo 3)
@@ -734,6 +779,7 @@
 )
 (campeon
   (nombre "Lissandra")
+  (tiene-rols "Mage" "N/A")
   (salud 5)
   (ataque 2)
   (hechizo 8)
@@ -749,6 +795,7 @@
 )
 (campeon
   (nombre "Lucian")
+  (tiene-rols "Marksman" "N/A")
   (salud 5)
   (ataque 8)
   (hechizo 3)
@@ -764,6 +811,7 @@
 )
 (campeon
   (nombre "Lulu")
+  (tiene-rols "Support" "Mage")
   (salud 5)
   (ataque 4)
   (hechizo 7)
@@ -779,6 +827,7 @@
 )
 (campeon
   (nombre "Lux")
+  (tiene-rols "Mage" "Support")
   (salud 4)
   (ataque 2)
   (hechizo 9)
@@ -794,6 +843,7 @@
 )
 (campeon
   (nombre "Malphite")
+  (tiene-rols "Tank" "Fighter")
   (salud 9)
   (ataque 5)
   (hechizo 7)
@@ -809,6 +859,7 @@
 )
 (campeon
   (nombre "Malzahar")
+  (tiene-rols "Mage" "Assassin")
   (salud 2)
   (ataque 2)
   (hechizo 9)
@@ -824,6 +875,7 @@
 )
 (campeon
   (nombre "Maokai")
+  (tiene-rols "Tank" "Mage")
   (salud 8)
   (ataque 3)
   (hechizo 6)
@@ -839,6 +891,7 @@
 )
 (campeon
   (nombre "Master Yi")
+  (tiene-rols "Assassin" "Fighter")
   (salud 4)
   (ataque 10)
   (hechizo 2)
@@ -854,6 +907,7 @@
 )
 (campeon
   (nombre "Miss Fortune")
+  (tiene-rols "Marksman" "N/A")
   (salud 2)
   (ataque 8)
   (hechizo 5)
@@ -869,6 +923,7 @@
 )
 (campeon
   (nombre "Mordekaiser")
+  (tiene-rols "Fighter" "Mage")
   (salud 6)
   (ataque 4)
   (hechizo 7)
@@ -884,6 +939,7 @@
 )
 (campeon
   (nombre "Morgana")
+  (tiene-rols "Mage" "Support")
   (salud 6)
   (ataque 1)
   (hechizo 8)
@@ -899,6 +955,7 @@
 )
 (campeon
   (nombre "Nami")
+  (tiene-rols "Support" "Mage")
   (salud 3)
   (ataque 4)
   (hechizo 7)
@@ -914,6 +971,7 @@
 )
 (campeon
   (nombre "Nasus")
+  (tiene-rols "Fighter" "Tank")
   (salud 5)
   (ataque 7)
   (hechizo 6)
@@ -929,6 +987,7 @@
 )
 (campeon
   (nombre "Nautilus")
+  (tiene-rols "Tank" "Fighter")
   (salud 6)
   (ataque 4)
   (hechizo 6)
@@ -944,6 +1003,7 @@
 )
 (campeon
   (nombre "Nidalee")
+  (tiene-rols "Assassin" "Support")
   (salud 4)
   (ataque 5)
   (hechizo 7)
@@ -959,6 +1019,7 @@
 )
 (campeon
   (nombre "Nocturne")
+  (tiene-rols "Assassin" "Fighter")
   (salud 5)
   (ataque 9)
   (hechizo 2)
@@ -974,6 +1035,7 @@
 )
 (campeon
   (nombre "Nunu")
+  (tiene-rols "Support" "Fighter")
   (salud 6)
   (ataque 4)
   (hechizo 7)
@@ -989,6 +1051,7 @@
 )
 (campeon
   (nombre "Olaf")
+  (tiene-rols "Fighter" "Tank")
   (salud 5)
   (ataque 9)
   (hechizo 3)
@@ -1004,6 +1067,7 @@
 )
 (campeon
   (nombre "Orianna")
+  (tiene-rols "Mage" "Support")
   (salud 3)
   (ataque 4)
   (hechizo 9)
@@ -1019,6 +1083,7 @@
 )
 (campeon
   (nombre "Pantheon")
+  (tiene-rols "Fighter" "Assassin")
   (salud 4)
   (ataque 9)
   (hechizo 3)
@@ -1034,6 +1099,7 @@
 )
 (campeon
   (nombre "Poppy")
+  (tiene-rols "Fighter" "Assassin")
   (salud 6)
   (ataque 6)
   (hechizo 5)
@@ -1049,6 +1115,7 @@
 )
 (campeon
   (nombre "Quinn")
+  (tiene-rols "Marksman" "Fighter")
   (salud 4)
   (ataque 9)
   (hechizo 2)
@@ -1064,6 +1131,7 @@
 )
 (campeon
   (nombre "Rammus")
+  (tiene-rols "Tank" "Fighter")
   (salud 10)
   (ataque 4)
   (hechizo 5)
@@ -1079,6 +1147,7 @@
 )
 (campeon
   (nombre "Renekton")
+  (tiene-rols "Fighter" "Tank")
   (salud 5)
   (ataque 8)
   (hechizo 2)
@@ -1094,6 +1163,7 @@
 )
 (campeon
   (nombre "Rengar")
+  (tiene-rols "Assassin" "Fighter")
   (salud 4)
   (ataque 7)
   (hechizo 2)
@@ -1109,6 +1179,7 @@
 )
 (campeon
   (nombre "Riven")
+  (tiene-rols "Fighter" "Assassin")
   (salud 5)
   (ataque 8)
   (hechizo 1)
@@ -1124,6 +1195,7 @@
 )
 (campeon
   (nombre "Rumble")
+  (tiene-rols "Fighter" "Mage")
   (salud 6)
   (ataque 3)
   (hechizo 8)
@@ -1139,6 +1211,7 @@
 )
 (campeon
   (nombre "Ryze")
+  (tiene-rols "Mage" "Fighter")
   (salud 2)
   (ataque 2)
   (hechizo 10)
@@ -1154,6 +1227,7 @@
 )
 (campeon
   (nombre "Sejuani")
+  (tiene-rols "Tank" "Fighter")
   (salud 7)
   (ataque 5)
   (hechizo 6)
@@ -1169,6 +1243,7 @@
 )
 (campeon
   (nombre "Shaco")
+  (tiene-rols "Assassin" "N/A")
   (salud 4)
   (ataque 8)
   (hechizo 6)
@@ -1184,6 +1259,7 @@
 )
 (campeon
   (nombre "Shen")
+  (tiene-rols "Tank" "Fighter")
   (salud 9)
   (ataque 3)
   (hechizo 3)
@@ -1199,6 +1275,7 @@
 )
 (campeon
   (nombre "Shyvana")
+  (tiene-rols "Fighter" "Tank")
   (salud 6)
   (ataque 8)
   (hechizo 3)
@@ -1214,6 +1291,7 @@
 )
 (campeon
   (nombre "Singed")
+  (tiene-rols "Tank" "Fighter")
   (salud 8)
   (ataque 4)
   (hechizo 7)
@@ -1229,6 +1307,7 @@
 )
 (campeon
   (nombre "Sion")
+  (tiene-rols "Fighter" "Mage")
   (salud 8)
   (ataque 5)
   (hechizo 7)
@@ -1244,6 +1323,7 @@
 )
 (campeon
   (nombre "Sivir")
+  (tiene-rols "Marksman" "N/A")
   (salud 3)
   (ataque 9)
   (hechizo 1)
@@ -1259,6 +1339,7 @@
 )
 (campeon
   (nombre "Skarner")
+  (tiene-rols "Fighter" "Tank")
   (salud 6)
   (ataque 7)
   (hechizo 5)
@@ -1274,6 +1355,7 @@
 )
 (campeon
   (nombre "Sona")
+  (tiene-rols "Support" "Mage")
   (salud 2)
   (ataque 5)
   (hechizo 8)
@@ -1289,6 +1371,7 @@
 )
 (campeon
   (nombre "Soraka")
+  (tiene-rols "Support" "Mage")
   (salud 5)
   (ataque 2)
   (hechizo 7)
@@ -1304,6 +1387,7 @@
 )
 (campeon
   (nombre "Swain")
+  (tiene-rols "Mage" "Fighter")
   (salud 6)
   (ataque 2)
   (hechizo 9)
@@ -1319,6 +1403,7 @@
 )
 (campeon
   (nombre "Syndra")
+  (tiene-rols "Mage" "Support")
   (salud 3)
   (ataque 2)
   (hechizo 9)
@@ -1334,6 +1419,7 @@
 )
 (campeon
   (nombre "Talon")
+  (tiene-rols "Assassin" "Fighter")
   (salud 3)
   (ataque 9)
   (hechizo 1)
@@ -1349,6 +1435,7 @@
 )
 (campeon
   (nombre "Taric")
+  (tiene-rols "Support" "Fighter")
   (salud 8)
   (ataque 4)
   (hechizo 5)
@@ -1364,6 +1451,7 @@
 )
 (campeon
   (nombre "Teemo")
+  (tiene-rols "Marksman" "Assassin")
   (salud 3)
   (ataque 5)
   (hechizo 7)
@@ -1379,6 +1467,7 @@
 )
 (campeon
   (nombre "Thresh")
+  (tiene-rols "Support" "Fighter")
   (salud 6)
   (ataque 5)
   (hechizo 6)
@@ -1394,6 +1483,7 @@
 )
 (campeon
   (nombre "Tristana")
+  (tiene-rols "Marksman" "Assassin")
   (salud 3)
   (ataque 9)
   (hechizo 5)
@@ -1409,6 +1499,7 @@
 )
 (campeon
   (nombre "Trundle")
+  (tiene-rols "Fighter" "Tank")
   (salud 6)
   (ataque 7)
   (hechizo 2)
@@ -1424,6 +1515,7 @@
 )
 (campeon
   (nombre "Tryndamere")
+  (tiene-rols "Fighter" "Assassin")
   (salud 5)
   (ataque 10)
   (hechizo 2)
@@ -1439,6 +1531,7 @@
 )
 (campeon
   (nombre "Twisted Fate")
+  (tiene-rols "Mage" "N/A")
   (salud 2)
   (ataque 6)
   (hechizo 6)
@@ -1454,6 +1547,7 @@
 )
 (campeon
   (nombre "Twitch")
+  (tiene-rols "Marksman" "Assassin")
   (salud 2)
   (ataque 9)
   (hechizo 3)
@@ -1469,6 +1563,7 @@
 )
 (campeon
   (nombre "Udyr")
+  (tiene-rols "Fighter" "Tank")
   (salud 7)
   (ataque 8)
   (hechizo 4)
@@ -1484,6 +1579,7 @@
 )
 (campeon
   (nombre "Urgot")
+  (tiene-rols "Marksman" "Tank")
   (salud 5)
   (ataque 8)
   (hechizo 3)
@@ -1499,6 +1595,7 @@
 )
 (campeon
   (nombre "Varus")
+  (tiene-rols "Marksman" "Mage")
   (salud 3)
   (ataque 7)
   (hechizo 4)
@@ -1514,6 +1611,7 @@
 )
 (campeon
   (nombre "Vayne")
+  (tiene-rols "Marksman" "Assassin")
   (salud 1)
   (ataque 10)
   (hechizo 1)
@@ -1529,6 +1627,7 @@
 )
 (campeon
   (nombre "Veigar")
+  (tiene-rols "Mage" "N/A")
   (salud 2)
   (ataque 2)
   (hechizo 10)
@@ -1544,6 +1643,7 @@
 )
 (campeon
   (nombre "Vel'Koz")
+  (tiene-rols "Mage" "N/A")
   (salud 2)
   (ataque 2)
   (hechizo 10)
@@ -1559,6 +1659,7 @@
 )
 (campeon
   (nombre "Vi")
+  (tiene-rols "Fighter" "Assassin")
   (salud 5)
   (ataque 8)
   (hechizo 3)
@@ -1574,6 +1675,7 @@
 )
 (campeon
   (nombre "Viktor")
+  (tiene-rols "Mage" "N/A")
   (salud 5)
   (ataque 2)
   (hechizo 9)
@@ -1589,6 +1691,7 @@
 )
 (campeon
   (nombre "Vladimir")
+  (tiene-rols "Mage" "Tank")
   (salud 6)
   (ataque 2)
   (hechizo 8)
@@ -1604,6 +1707,7 @@
 )
 (campeon
   (nombre "Volibear")
+  (tiene-rols "Fighter" "Tank")
   (salud 7)
   (ataque 7)
   (hechizo 4)
@@ -1619,6 +1723,7 @@
 )
 (campeon
   (nombre "Warwick")
+  (tiene-rols "Fighter" "Tank")
   (salud 4)
   (ataque 7)
   (hechizo 4)
@@ -1634,6 +1739,7 @@
 )
 (campeon
   (nombre "Wukong")
+  (tiene-rols "Fighter" "Tank")
   (salud 5)
   (ataque 8)
   (hechizo 2)
@@ -1649,6 +1755,7 @@
 )
 (campeon
   (nombre "Xerath")
+  (tiene-rols "Mage" "Assassin")
   (salud 3)
   (ataque 1)
   (hechizo 10)
@@ -1664,6 +1771,7 @@
 )
 (campeon
   (nombre "Xin Zhao")
+  (tiene-rols "Fighter" "Assassin")
   (salud 6)
   (ataque 8)
   (hechizo 3)
@@ -1679,6 +1787,7 @@
 )
 (campeon
   (nombre "Yasuo")
+  (tiene-rols "Fighter" "Assassin")
   (salud 4)
   (ataque 8)
   (hechizo 4)
@@ -1694,6 +1803,7 @@
 )
 (campeon
   (nombre "Yorick")
+  (tiene-rols "Fighter" "Mage")
   (salud 6)
   (ataque 6)
   (hechizo 6)
@@ -1709,6 +1819,7 @@
 )
 (campeon
   (nombre "Zac")
+  (tiene-rols "Tank" "Fighter")
   (salud 7)
   (ataque 3)
   (hechizo 7)
@@ -1724,6 +1835,7 @@
 )
 (campeon
   (nombre "Zed")
+  (tiene-rols "Assassin" "Fighter")
   (salud 2)
   (ataque 9)
   (hechizo 1)
@@ -1739,6 +1851,7 @@
 )
 (campeon
   (nombre "Ziggs")
+  (tiene-rols "Mage" "N/A")
   (salud 4)
   (ataque 2)
   (hechizo 9)
@@ -1754,6 +1867,7 @@
 )
 (campeon
   (nombre "Zilean")
+  (tiene-rols "Support" "Mage")
   (salud 5)
   (ataque 2)
   (hechizo 8)
@@ -1769,6 +1883,7 @@
 )
 (campeon
   (nombre "Zyra")
+  (tiene-rols "Mage" "Support")
   (salud 3)
   (ataque 4)
   (hechizo 8)
@@ -1782,124 +1897,6 @@
   (gw "Yasuo" "Jinx" "Vayne" "Caitlyn" "Ashe" "Corki" "Varus" "Draven" "Amumu" "Miss Fortune")
   (ban 0)
 )
-(tiene-rols "Aatrox" "Fighter" "Tank")
-(tiene-rols "Ahri" "Mage" "Assassin")
-(tiene-rols "Akali" "Assassin" "N/A")
-(tiene-rols "Alistar" "Tank" "N/A")
-(tiene-rols "Amumu" "Tank" "Mage")
-(tiene-rols "Anivia" "Mage" "Support")
-(tiene-rols "Annie" "Mage" "N/A")
-(tiene-rols "Ashe" "Marksman" "Support")
-(tiene-rols "Blitzcrank" "Tank" "Fighter")
-(tiene-rols "Brand" "Mage" "N/A")
-(tiene-rols "Caitlyn" "Marksman" "N/A")
-(tiene-rols "Cassiopeia" "Mage" "N/A")
-(tiene-rols "Cho'Gath" "Tank" "Mage")
-(tiene-rols "Corki" "Marksman" "N/A")
-(tiene-rols "Darius" "Fighter" "Tank")
-(tiene-rols "Diana" "Fighter" "Mage")
-(tiene-rols "Dr. Mundo" "Fighter" "Tank")
-(tiene-rols "Draven" "Marksman" "N/A")
-(tiene-rols "Elise" "Mage" "Fighter")
-(tiene-rols "Evelynn" "Assassin" "Mage")
-(tiene-rols "Ezreal" "Marksman" "Mage")
-(tiene-rols "Fiddlesticks" "Mage" "Support")
-(tiene-rols "Fiora" "Fighter" "Assassin")
-(tiene-rols "Fizz" "Assassin" "Fighter")
-(tiene-rols "Galio" "Tank" "Mage")
-(tiene-rols "Gangplank" "Fighter" "Support")
-(tiene-rols "Garen" "Fighter" "Tank")
-(tiene-rols "Gragas" "Mage" "Fighter")
-(tiene-rols "Graves" "Marksman" "N/A")
-(tiene-rols "Hecarim" "Fighter" "Tank")
-(tiene-rols "Heimerdinger" "Mage" "Support")
-(tiene-rols "Irelia" "Fighter" "Assassin")
-(tiene-rols "Janna" "Support" "Mage")
-(tiene-rols "Jarvan IV" "Tank" "Fighter")
-(tiene-rols "Jax" "Fighter" "Assassin")
-(tiene-rols "Jayce" "Fighter" "Marksman")
-(tiene-rols "Jinx" "Marksman" "N/A")
-(tiene-rols "Karma" "Mage" "Support")
-(tiene-rols "Karthus" "Mage" "N/A")
-(tiene-rols "Kassadin" "Assassin" "Mage")
-(tiene-rols "Katarina" "Assassin" "Mage")
-(tiene-rols "Kayle" "Fighter" "Support")
-(tiene-rols "Kennen" "Mage" "Marksman")
-(tiene-rols "Kha'Zix" "Assassin" "N/A")
-(tiene-rols "Kog'Maw" "Marksman" "Mage")
-(tiene-rols "LeBlanc" "Assassin" "Mage")
-(tiene-rols "Lee Sin" "Fighter" "Assassin")
-(tiene-rols "Leona" "Tank" "Support")
-(tiene-rols "Lissandra" "Mage" "N/A")
-(tiene-rols "Lucian" "Marksman" "N/A")
-(tiene-rols "Lulu" "Support" "Mage")
-(tiene-rols "Lux" "Mage" "Support")
-(tiene-rols "Malphite" "Tank" "Fighter")
-(tiene-rols "Malzahar" "Mage" "Assassin")
-(tiene-rols "Maokai" "Tank" "Mage")
-(tiene-rols "Master Yi" "Assassin" "Fighter")
-(tiene-rols "Miss Fortune" "Marksman" "N/A")
-(tiene-rols "Mordekaiser" "Fighter" "Mage")
-(tiene-rols "Morgana" "Mage" "Support")
-(tiene-rols "Nami" "Support" "Mage")
-(tiene-rols "Nasus" "Fighter" "Tank")
-(tiene-rols "Nautilus" "Tank" "Fighter")
-(tiene-rols "Nidalee" "Assassin" "Support")
-(tiene-rols "Nocturne" "Assassin" "Fighter")
-(tiene-rols "Nunu" "Support" "Fighter")
-(tiene-rols "Olaf" "Fighter" "Tank")
-(tiene-rols "Orianna" "Mage" "Support")
-(tiene-rols "Pantheon" "Fighter" "Assassin")
-(tiene-rols "Poppy" "Fighter" "Assassin")
-(tiene-rols "Quinn" "Marksman" "Fighter")
-(tiene-rols "Rammus" "Tank" "Fighter")
-(tiene-rols "Renekton" "Fighter" "Tank")
-(tiene-rols "Rengar" "Assassin" "Fighter")
-(tiene-rols "Riven" "Fighter" "Assassin")
-(tiene-rols "Rumble" "Fighter" "Mage")
-(tiene-rols "Ryze" "Mage" "Fighter")
-(tiene-rols "Sejuani" "Tank" "Fighter")
-(tiene-rols "Shaco" "Assassin" "N/A")
-(tiene-rols "Shen" "Tank" "Fighter")
-(tiene-rols "Shyvana" "Fighter" "Tank")
-(tiene-rols "Singed" "Tank" "Fighter")
-(tiene-rols "Sion" "Fighter" "Mage")
-(tiene-rols "Sivir" "Marksman" "N/A")
-(tiene-rols "Skarner" "Fighter" "Tank")
-(tiene-rols "Sona" "Support" "Mage")
-(tiene-rols "Soraka" "Support" "Mage")
-(tiene-rols "Swain" "Mage" "Fighter")
-(tiene-rols "Syndra" "Mage" "Support")
-(tiene-rols "Talon" "Assassin" "Fighter")
-(tiene-rols "Taric" "Support" "Fighter")
-(tiene-rols "Teemo" "Marksman" "Assassin")
-(tiene-rols "Thresh" "Support" "Fighter")
-(tiene-rols "Tristana" "Marksman" "Assassin")
-(tiene-rols "Trundle" "Fighter" "Tank")
-(tiene-rols "Tryndamere" "Fighter" "Assassin")
-(tiene-rols "Twisted Fate" "Mage" "N/A")
-(tiene-rols "Twitch" "Marksman" "Assassin")
-(tiene-rols "Udyr" "Fighter" "Tank")
-(tiene-rols "Urgot" "Marksman" "Tank")
-(tiene-rols "Varus" "Marksman" "Mage")
-(tiene-rols "Vayne" "Marksman" "Assassin")
-(tiene-rols "Veigar" "Mage" "N/A")
-(tiene-rols "Vel'Koz" "Mage" "N/A")
-(tiene-rols "Vi" "Fighter" "Assassin")
-(tiene-rols "Viktor" "Mage" "N/A")
-(tiene-rols "Vladimir" "Mage" "Tank")
-(tiene-rols "Volibear" "Fighter" "Tank")
-(tiene-rols "Warwick" "Fighter" "Tank")
-(tiene-rols "Wukong" "Fighter" "Tank")
-(tiene-rols "Xerath" "Mage" "Assassin")
-(tiene-rols "Xin Zhao" "Fighter" "Assassin")
-(tiene-rols "Yasuo" "Fighter" "Assassin")
-(tiene-rols "Yorick" "Fighter" "Mage")
-(tiene-rols "Zac" "Tank" "Fighter")
-(tiene-rols "Zed" "Assassin" "Fighter")
-(tiene-rols "Ziggs" "Mage" "N/A")
-(tiene-rols "Zilean" "Support" "Mage")
-(tiene-rols "Zyra" "Mage" "Support")
 (ba "Aatrox" "Jax")
 (ba "Aatrox" "LeBlanc")
 (ba "Aatrox" "Fiora")
