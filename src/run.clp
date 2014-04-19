@@ -21,7 +21,7 @@
   (slot flag (type INTEGER))
 )
 ; Aatrox
-(defglobal ?*equipo* = 0) ; equipo que pertenece el jugador de abajo que representa al usuario
+(defglobal ?*equipo* = 0) ; equipo que pertenece a la defglobal player de abajo que representa al usuario
 (defglobal ?*player* = 0) ; eleccion de # jugador que representa al usuario
 (defglobal ?*candidatos* = 0) ; lista de candidatos ordenado segun prioridad de la lista de abajo
 (defglobal ?*prioridades* = 0) ; lista de prioridades de campeones de arriba en orden descendente
@@ -29,32 +29,21 @@
 (defglobal ?*campeones* = 0) ; lista de jugadores elegidos ordenado segun reglas de elección de campeon
 (defglobal ?*equipos* = 0) ; equipo que pertenece el jugador que elegio el campeon en la lista de arriba
 
-;(defrule le-fue-bien
-;	(salience 187)
-;	(comolefue 1)
-;	?p <- (campeon (nombre ?**))
-;=>
-;	(modify ?p (+ prioridad 1))
-;)
-;(defrule le-fue-mal
-;	(salience 187)
-;	(comolefue 0)
-;	?p <- (campeon (nombre ?**))
-;=>
-;	(modify ?p (- prioridad 1))
-;)
 (defrule como-le-fue
 (declare (salience 186))
   (juega-con ?player ?equipo ?campeon)
   (test (and (eq ?player ?*player*) (eq ?equipo ?*equipo*)))
   ?p <- (campeon (nombre ?campeon) (prioridad ?prioridad) (ban 1))
 =>
-	(printout t "Ud. es el jugador #" ?*player* " del equipo " ?*equipo* ". " crlf "Con prioridad igual a " ?prioridad ", le fue bien a tu campeon \"" ?campeon "\" ? si o no: ")
+	(printout t crlf "Ud. es el jugador #" ?*player* " del equipo " ?*equipo* ". " crlf "Con prioridad igual a " ?prioridad ", le fue bien a tu campeon \"" ?campeon "\" ? si o no: ")
 	(bind ?comolefue (readline))
+  (open "prioridad.txt" escritura "a")
   (if (eq ?comolefue "si")
-    then (modify ?p (prioridad (+ ?prioridad 1))(ban 2)) (printout t "nueva prioridad + " (+ ?prioridad 1) crlf)
-    else (modify ?p (prioridad (- ?prioridad 1))(ban 2)) (printout t "nueva prioridad - " (- ?prioridad 1) crlf)
+    then (modify ?p (prioridad (+ ?prioridad 1))(ban 2)) (printout escritura "\"" ?campeon "\" \"1\"" crlf)
+    else (modify ?p (prioridad (- ?prioridad 1))(ban 2)) (printout escritura "\"" ?campeon "\" \"0\"" crlf)
   )
+  (printout t "Guardando... Listo" crlf)
+  (close)
 )
 ; ORDEN DE ELECCION
 ; 1a
@@ -100,6 +89,8 @@
   (modify ?f1 (prioridad (+ ?prioridad 1)))
   (printout t "Restando prioridad a " ?campeon " de jugador " ?jugador " y equipo " ?equipo " porque es ba con " ?ba crlf)
 )
+
+
 (defrule ingreso-campeon-fase2
   (declare (salience 199)); mas alto que los ingreso-#equipo
   (con-posicion ?jugador ?equipo ?pos)
@@ -200,8 +191,11 @@
           (bind ?*prioridades* ?*prioridades* ?pri)
       )
   )
-  ;(printout t crlf "== " ?jugador " == " ?posicion " == " $?rols " == " ?r1 " == " ?r2 " == " ?campeon " == prioridad " ?prioridad  crlf crlf)
+  ;(printout t crlf "== " ?jugador " == " ?posicion " == " $?rols " == " ?r1 " == " ?r2 " == " ?campeon " == prioridad " ?pri  crlf crlf)
 )
+
+
+
 (defrule ingreso-5m
   (declare (salience 190))
   (jugador 5 "m")
@@ -325,7 +319,6 @@
 =>	
 	(printout t "Modo Blind-Pick" crlf)
 	
-	;(assert (flag201 1))
   (assert (ban "Irelia"))
   (assert (ban "Janna"))
   (assert (ban "Jarvan IV"))
@@ -333,7 +326,7 @@
   (assert (ban "Jayce"))
   (assert (ban "Jinx"))
 
-	(printout t crlf "Ingrese equipo a pertener, Azul o Morado: ")
+	(printout t crlf "Ingrese equipo a pertener, azul o morado: ")
 	(bind ?*equipo* "a")
 
 	(printout t crlf "Ingrese el # de jugador (1 - 6) del equipo " ?*equipo* ": ")
@@ -341,10 +334,37 @@
 	(printout t crlf)
   (assert (jugador 1 "a")) ; proximo jugador que elije
 )
+(defrule regla-lectura
+  (declare (salience 202))
+  (initial-fact)
+  ?f0 <- (reemplaza-priori ?campeon ?prioridad)
+  ?f1 <- (campeon (nombre ?campeon) (prioridad ?pri))
+=>
+  (retract ?f0)
+  (printout t "MODIFICANDO prioridad de " ?pri " de " ?campeon " con: ")
+  (if (eq "1" ?prioridad)
+    then
+      (modify ?f1 (prioridad (+ 1 ?pri)))
+      (printout t "+1" crlf)
+    else
+      (modify ?f1 (prioridad (- 1 ?pri)))
+      (printout t "-1" crlf)
+  )
+)
 (defrule inicio
-(declare (salience 202))
+(declare (salience 203))
   (initial-fact)
 =>
   (load-facts limited_facts.clp)
+  (open "prioridad.txt" lectura "r")
+  (bind ?campeon (read lectura))
+  (bind ?prioridad (read lectura))
+  (while (neq ?campeon EOF)
+    (assert (reemplaza-priori ?campeon ?prioridad))
+    ;(printout t "campeon encontrado " ?campeon " y prioridad defecto " ?prioridad crlf)
+    (bind ?campeon (read lectura))
+    (bind ?prioridad (read lectura))
+  )
+  (close)
 	;(printout t " Exito!!, Se cargaron los datos correctamente" crlf crlf )
 )
