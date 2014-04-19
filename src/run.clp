@@ -105,6 +105,7 @@
   (printout t "Ingrese nombre del campeon: ")
   (bind ?campeon (readline))
   (assert (juega-con ?jugador ?equipo ?campeon))
+  (assert (ban ?campeon)) ; ya no se podra elegir
   (printout t crlf)
 )
 (defrule ingreso-campeon
