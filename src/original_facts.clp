@@ -19,7 +19,7 @@
   (fecha "2013-06-13")
   (puntosip 6300)
   (puntosrp 975)
-  (prioridad 100)
+  (prioridad 99)
   (ga "Yasuo" "Dr. Mundo" "Jinx" "Darius" "Katarina" "Nasus" "Akali" "Kassadin" "Zed" "Hecarim")
   (ba "Jax" "LeBlanc" "Fiora" "Riven" "Teemo" "Pantheon" "Pantheon" "Yasuo" "Fizz" "Renekton")
   (gw "Yasuo" "Caitlyn" "Darius" "Jinx" "Akali" "Teemo" "Ezreal" "Varus" "Thresh" "Corki")
